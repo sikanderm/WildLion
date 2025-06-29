@@ -1,0 +1,782 @@
+[
+  {
+    "id": 9989,
+    "name": "Gijima Coalition",
+    "lat": -24.932288953644264,
+    "lng": 31.554813712144004,
+    "description": "2 Gijimas were seen trailing 4 Nkuhlu males ",
+    "date": "2025-05-12",
+    "reserve": "Tengile River Lodge",
+    "location": "SabiSands"
+  },
+  {
+    "id": 9990,
+    "name": "Nkhulu Coalition",
+    "lat": -24.932288953644264,
+    "lng": 31.554813712144004,
+    "description": "Nkuhlu males seen chasing the Gijima males ",
+    "date": "2025-05-12",
+    "reserve": "Tengile River Lodge",
+    "location": "SabiSands"
+  },
+  {
+    "id": 9991,
+    "name": "Nkhulu Coalition",
+    "lat": -24.93410724912834,
+    "lng": 31.559295774791327,
+    "description": "A Nkuhlu male seen with the Sand River pride ",
+    "date": "2025-05-16",
+    "reserve": "Kirkman's Camp",
+    "location": "SabiSands"
+  },
+  {
+    "id": 9992,
+    "name": "Gijima Coalition",
+    "lat": -24.95598265041139,
+    "lng": 31.497848758851184,
+    "description": "An unknown male tried to join the Msuthu pride and Gijima males on a kill ",
+    "date": "2025-05-17",
+    "reserve": "Lion Sands",
+    "location": "SabiSands"
+  },
+  {
+    "id": 9993,
+    "name": "Torchwood Pride",
+    "lat": -24.731666549121222,
+    "lng": 31.598023886195413,
+    "description": "Torchwood Pride seen on the ",
+    "date": "2025-05-22",
+    "reserve": "Nkorho Lodge Cam",
+    "location": "SabiSands"
+  },
+  {
+    "id": 9994,
+    "name": "Mhangeni Pride",
+    "lat": -24.820171201875656,
+    "lng": 31.444294370669372,
+    "description": "The Nkuhuma male with a Mangheni lioness ",
+    "date": "2025-05-29",
+    "reserve": "Western Singita",
+    "location": "SabiSands"
+  },
+  {
+    "id": 9995,
+    "name": "Nkuhuma and Talamati Coalition",
+    "lat": -24.820171201875656,
+    "lng": 31.444294370669372,
+    "description": "The Nkuhuma male with a Mangheni lioness ",
+    "date": "2025-05-29",
+    "reserve": "Western Singita",
+    "location": "SabiSands"
+  },
+  {
+    "id": 9996,
+    "name": "Nkuhuma and Talamati Coalition",
+    "lat": -24.850082143315692,
+    "lng": 31.427814879654367,
+    "description": "NK and Khanya back in the West and roaring ",
+    "date": "2025-05-30",
+    "reserve": "Western Singita",
+    "location": "SabiSands"
+  },
+  {
+    "id": 9997,
+    "name": "The Plains Camp Males",
+    "lat": -24.70075512688314,
+    "lng": 31.518082900230983,
+    "description": "PCM chased the Kambula males at ",
+    "date": "2025-05-30",
+    "reserve": "Little Gowrie",
+    "location": "SabiSands"
+  },
+  {
+    "id": 9998,
+    "name": "Nkuhuma and Talamati Coalition",
+    "lat": -24.8776613363,
+    "lng": 31.525049283955084,
+    "description": "NK male relaxing with a Kambula lioness ",
+    "date": "2025-06-01",
+    "reserve": "Umkumbe Camp",
+    "location": "SabiSands"
+  },
+  {
+    "id": 9999,
+    "name": "Nkuhuma and Talamati Coalition",
+    "lat": -24.794152364355632,
+    "lng": 31.433452055860503,
+    "description": "NK & Khanya seen feeding on a kill ",
+    "date": "2025-06-06",
+    "reserve": "Singita",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10000,
+    "name": "Mhangeni Pride",
+    "lat": -24.769209406097612,
+    "lng": 31.401041815421273,
+    "description": "The Mhangeni Pride seen on a Kudu kill ",
+    "date": "2025-06-06",
+    "reserve": "Dulini Lodge",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10001,
+    "name": "Nkhulu Coalition",
+    "lat": -24.93556656582579,
+    "lng": 31.557804466685152,
+    "description": "Dreadlocks Nkuhlu seen alone recently ",
+    "date": "2025-06-07",
+    "reserve": "Kirkman's Camp",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10002,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.800093936033054,
+    "lng": 31.536051992797535,
+    "description": "The Ndhzenga males seen together ",
+    "date": "2025-06-08",
+    "reserve": "MalaMala",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10003,
+    "name": "Gijima Coalition",
+    "lat": -24.972390284371354,
+    "lng": 31.530629596239528,
+    "description": "Bigger Gijima male seen walking, slightly limping ",
+    "date": "2025-06-08",
+    "reserve": "Lion Sands Game Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10004,
+    "name": "The Plains Camp Males",
+    "lat": -24.77205128256658,
+    "lng": 31.38812057791535,
+    "description": "Bigger The Plains Camp male seen with the Ximungwe Pride ",
+    "date": "2025-06-08",
+    "reserve": "Inyati Game Lodge",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10005,
+    "name": "Ximunghwe Pride",
+    "lat": -24.77205128256658,
+    "lng": 31.38812057791535,
+    "description": "Ximungwe Pride seen with the bigger Plains Camp male ",
+    "date": "2025-06-08",
+    "reserve": "Inyati Game Lodge",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10006,
+    "name": "The Kambula Males",
+    "lat": -24.708021690041885,
+    "lng": 31.536662091726722,
+    "description": "Kambula Males K5 and K6 seen roaring and chasing 2 males suspected to be the 2 Mantimahle males in Gowrie Dam ",
+    "date": "2025-06-10",
+    "reserve": "Djuma Private Game Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10007,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.73233893528407,
+    "lng": 31.59554284338439,
+    "description": "The Ndhzenga males seen hunting buffalo out of their usual territory ",
+    "date": "2025-06-11",
+    "reserve": "Nkorho Bush Lodge",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10008,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.74485547800498,
+    "lng": 31.570982264984995,
+    "description": "The Ndhzenga males seen heading back towards their usual territory ",
+    "date": "2025-06-11",
+    "reserve": "Jaci's Sabi House",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10009,
+    "name": "Kambula Pride",
+    "lat": -24.8075,
+    "lng": 31.5367,
+    "description": "The lioness and four cubs had an impala kill south of Princess Alice Pans and remained in the area for the following week ",
+    "date": "2025-05-01",
+    "location": "SabiSands",
+    "reserve": "South of Princess Alice Pans"
+  },
+  {
+    "id": 10010,
+    "name": "Kambula Pride",
+    "lat": -24.8022,
+    "lng": 31.5401,
+    "description": "The majority of the pride were seen at Mamba Waterhole ",
+    "date": "2025-05-02",
+    "location": "SabiSands",
+    "reserve": "Mamba Waterhole"
+  },
+  {
+    "id": 10011,
+    "name": "Kambula Pride",
+    "lat": -24.7968,
+    "lng": 31.55,
+    "description": "The pride was at Charleston North Crossing ",
+    "date": "2025-05-04",
+    "location": "SabiSands",
+    "reserve": "Charleston North Crossing"
+  },
+  {
+    "id": 10012,
+    "name": "Kambula Pride",
+    "lat": -24.79,
+    "lng": 31.545,
+    "description": "One lioness and nine sub-adults were at White Cloth Open Area, while two sub-adults were at Flockfield Tower ",
+    "date": "2025-05-06",
+    "location": "SabiSands",
+    "reserve": "White Cloth Open Area / Flockfield Tower"
+  },
+  {
+    "id": 10013,
+    "name": "Kambula Pride",
+    "lat": -24.785,
+    "lng": 31.535,
+    "description": "The bulk of the pride was east of Maurice’s Pan ",
+    "date": "2025-05-07",
+    "location": "SabiSands",
+    "reserve": "East of Maurice’s Pan"
+  },
+  {
+    "id": 10014,
+    "name": "Kambula Pride",
+    "lat": -24.78,
+    "lng": 31.53,
+    "description": "The entire pride, including the four cubs and the Ndhzenga males, were feeding on a buffalo kill at Kikilezihash Crossing ",
+    "date": "2025-05-08",
+    "location": "SabiSands",
+    "reserve": "Kikilezihash Crossing"
+  },
+  {
+    "id": 10015,
+    "name": "Kambula Pride",
+    "lat": -24.775,
+    "lng": 31.525,
+    "description": "The lioness and four cubs were at West Street Bridge. Three lionesses and five sub-adults were at Flockfield Pools ",
+    "date": "2025-05-09",
+    "location": "SabiSands",
+    "reserve": "West Street Bridge / Flockfield Pools"
+  },
+  {
+    "id": 10016,
+    "name": "Kambula Pride",
+    "lat": -24.77,
+    "lng": 31.53,
+    "description": "Three members made an impala kill west of Rattray’s Camp. Eight sub-adults were at Mamba Waterhole. The four cubs were east of Rattray’s Camp ",
+    "date": "2025-05-12",
+    "location": "SabiSands",
+    "reserve": "Rattray’s Camp / Mamba Waterhole"
+  },
+  {
+    "id": 10017,
+    "name": "Kambula Pride",
+    "lat": -24.775,
+    "lng": 31.54,
+    "description": "The lioness and four cubs were at Flockfield Pools, while the bulk of the pride was at Dudley Crossing ",
+    "date": "2025-05-14",
+    "location": "SabiSands",
+    "reserve": "Flockfield Pools / Dudley Crossing"
+  },
+  {
+    "id": 10018,
+    "name": "Kambula Pride",
+    "lat": -24.782,
+    "lng": 31.545,
+    "description": "The bulk of the pride were at Flockfield Tower. Another lioness was chasing the Three Rivers female just south of that location ",
+    "date": "2025-05-18",
+    "location": "SabiSands",
+    "reserve": "Flockfield Tower"
+  },
+  {
+    "id": 10019,
+    "name": "Kambula Pride",
+    "lat": -24.8075,
+    "lng": 31.5367,
+    "description": "The lioness and four cubs were joined by the Ndhzenga males at Princess Alice Pans. Another lioness was feeding on an impala kill further north ",
+    "date": "2025-05-18",
+    "location": "SabiSands",
+    "reserve": "Princess Alice Pans"
+  },
+  {
+    "id": 10020,
+    "name": "Kambula Pride",
+    "lat": -24.775,
+    "lng": 31.525,
+    "description": "The lioness and four cubs were at West Street Bridge ",
+    "date": "2025-05-19",
+    "location": "SabiSands",
+    "reserve": "West Street Bridge"
+  },
+  {
+    "id": 10021,
+    "name": "Kambula Pride",
+    "lat": -24.782,
+    "lng": 31.545,
+    "description": "The lioness and four cubs were joined by another lioness and the Ndhzenga males to the north of Flockfield Tower ",
+    "date": "2025-05-20",
+    "location": "SabiSands",
+    "reserve": "North of Flockfield Tower"
+  },
+  {
+    "id": 10022,
+    "name": "Kambula Pride",
+    "lat": -24.81,
+    "lng": 31.54,
+    "description": "All 11 sub-adults were on a buffalo kill at Styx Waterhole ",
+    "date": "2025-05-23",
+    "location": "SabiSands",
+    "reserve": "Styx Waterhole"
+  },
+  {
+    "id": 10023,
+    "name": "Kambula Pride",
+    "lat": -24.815,
+    "lng": 31.535,
+    "description": "The 11 sub-adults had a kudu kill further south of Styx Waterhole ",
+    "date": "2025-05-24",
+    "location": "SabiSands",
+    "reserve": "South of Styx Waterhole"
+  },
+  {
+    "id": 10024,
+    "name": "Kambula Pride",
+    "lat": -24.775,
+    "lng": 31.525,
+    "description": "The 11 sub-adults attempted to steal an impala kill from the Stone Drift female and her cub to the south of West Street Bridge but were unsuccessful ",
+    "date": "2025-05-26",
+    "location": "SabiSands",
+    "reserve": "South of West Street Bridge"
+  },
+  {
+    "id": 10025,
+    "name": "Kambula Pride",
+    "lat": -24.8022,
+    "lng": 31.5401,
+    "description": "A lioness joined the 11 sub-adults south of Mamba Waterhole, and an Ndhzenga male was with the four younger cubs at Princess Alice Pans ",
+    "date": "2025-05-29",
+    "location": "SabiSands",
+    "reserve": "South of Mamba Waterhole / Princess Alice Pans"
+  },
+  {
+    "id": 10026,
+    "name": "Kambula Pride",
+    "lat": -24.775,
+    "lng": 31.525,
+    "description": "13 members of the pride joined the Ndhzenga males at West Street Bridge ",
+    "date": "2025-05-30",
+    "location": "SabiSands",
+    "reserve": "West Street Bridge"
+  },
+  {
+    "id": 10027,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.8075,
+    "lng": 31.53,
+    "description": "The Ndhzenga males were seen with the Kambula Pride at Kikilezihash Crossing during a buffalo kill ",
+    "date": "2025-05-08",
+    "location": "SabiSands",
+    "reserve": "Kikilezihash Crossing"
+  },
+  {
+    "id": 10028,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.8075,
+    "lng": 31.5367,
+    "description": "The Ndhzenga males were with the lioness and four cubs at Princess Alice Pans ",
+    "date": "2025-05-18",
+    "location": "SabiSands",
+    "reserve": "Princess Alice Pans"
+  },
+  {
+    "id": 10029,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.782,
+    "lng": 31.545,
+    "description": "The Ndhzenga males were seen with a lioness and the four cubs north of Flockfield Tower ",
+    "date": "2025-05-20",
+    "location": "SabiSands",
+    "reserve": "North of Flockfield Tower"
+  },
+  {
+    "id": 10030,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.8075,
+    "lng": 31.5367,
+    "description": "One Ndhzenga male was with the four younger cubs at Princess Alice Pans while another joined sub-adults south of Mamba Waterhole ",
+    "date": "2025-05-29",
+    "location": "SabiSands",
+    "reserve": "Princess Alice Pans / South of Mamba Waterhole"
+  },
+  {
+    "id": 10031,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.775,
+    "lng": 31.525,
+    "description": "The Ndhzenga males were with 13 members of the Kambula Pride at West Street Bridge ",
+    "date": "2025-05-30",
+    "location": "SabiSands",
+    "reserve": "West Street Bridge"
+  },
+  {
+    "id": 10032,
+    "name": "Nkhulu Coalition",
+    "lat": -24.8,
+    "lng": 31.54,
+    "description": "Three males were with two lionesses from the Sand River Pride at F‑Bend Open Area ",
+    "date": "2025-05-10",
+    "location": "SabiSands",
+    "reserve": "F‑Bend Open Area"
+  },
+  {
+    "id": 10033,
+    "name": "Nkhulu Coalition",
+    "lat": -24.798,
+    "lng": 31.545,
+    "description": "One male was with four lionesses from the Sand River Pride at Charleston Rock ",
+    "date": "2025-05-11",
+    "location": "SabiSands",
+    "reserve": "Charleston Rock"
+  },
+  {
+    "id": 10034,
+    "name": "Nkhulu Coalition",
+    "lat": -24.795,
+    "lng": 31.55,
+    "description": "Four males were seen at KK Crossing ",
+    "date": "2025-05-12",
+    "location": "SabiSands",
+    "reserve": "KK Crossing"
+  },
+  {
+    "id": 10035,
+    "name": "Nkhulu Coalition",
+    "lat": -24.79,
+    "lng": 31.54,
+    "description": "One male was with a lioness from the Sand River Pride west of Tjellahanga Pans ",
+    "date": "2025-05-16",
+    "location": "SabiSands",
+    "reserve": "West of Tjellahanga Pans"
+  },
+  {
+    "id": 10036,
+    "name": "Nkhulu Coalition",
+    "lat": -24.788,
+    "lng": 31.538,
+    "description": "Three males were northwest of Tjellahanga Rocks ",
+    "date": "2025-05-16",
+    "location": "SabiSands",
+    "reserve": "Northwest of Tjellahanga Rocks"
+  },
+  {
+    "id": 10037,
+    "name": "Nkhulu Coalition",
+    "lat": -24.785,
+    "lng": 31.535,
+    "description": "Three males chased the 2:3 male up a tree west of Jakkalsdraai Open Area ",
+    "date": "2025-05-18",
+    "location": "SabiSands",
+    "reserve": "West of Jakkalsdraai Open Area"
+  },
+  {
+    "id": 10038,
+    "name": "Nkhulu Coalition",
+    "lat": -24.792,
+    "lng": 31.545,
+    "description": "Three males were with the Sand River Pride south of Charleston Rock ",
+    "date": "2025-05-22",
+    "location": "SabiSands",
+    "reserve": "South of Charleston Rock"
+  },
+  {
+    "id": 10039,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.8,
+    "lng": 31.54,
+    "description": "One male of the Ndzhenga males was with the Ntsevu Pride at Piccadilly Triangle ",
+    "date": "2025-05-01",
+    "location": "SabiSands",
+    "reserve": "Piccadilly Triangle"
+  },
+  {
+    "id": 10040,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.8,
+    "lng": 31.54,
+    "description": "The Ndzhenga males were with the Ntsevu Pride at Piccadilly Triangle ",
+    "date": "2025-05-02",
+    "location": "SabiSands",
+    "reserve": "Piccadilly Triangle"
+  },
+  {
+    "id": 10041,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.795,
+    "lng": 31.545,
+    "description": "The Ndzhenga males were east of Elephant Rock ",
+    "date": "2025-05-06",
+    "location": "SabiSands",
+    "reserve": "East of Elephant Rock"
+  },
+  {
+    "id": 10042,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.8,
+    "lng": 31.54,
+    "description": "The Ndzhenga males were west of Piccadilly Triangle ",
+    "date": "2025-05-07",
+    "location": "SabiSands",
+    "reserve": "West of Piccadilly Triangle"
+  },
+  {
+    "id": 10043,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.78,
+    "lng": 31.53,
+    "description": "The Ndzhenga males shared a buffalo bull kill with the Kambula Pride, including the four youngest cubs, at Kikilezihash Crossing ",
+    "date": "2025-05-08",
+    "location": "SabiSands",
+    "reserve": "Kikilezihash Crossing"
+  },
+  {
+    "id": 10044,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.77,
+    "lng": 31.525,
+    "description": "One male of the Ndzhenga males was west of Rattray’s Camp ",
+    "date": "2025-05-09",
+    "location": "SabiSands",
+    "reserve": "West of Rattray’s Camp"
+  },
+  {
+    "id": 10045,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.782,
+    "lng": 31.545,
+    "description": "The Ndzhenga males were together north of Stwise ",
+    "date": "2025-05-10",
+    "location": "SabiSands",
+    "reserve": "North of Stwise"
+  },
+  {
+    "id": 10046,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.775,
+    "lng": 31.525,
+    "description": "The Ndzhenga males were at Mlowathi Dam ",
+    "date": "2025-05-14",
+    "location": "SabiSands",
+    "reserve": "Mlowathi Dam"
+  },
+  {
+    "id": 10047,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.8075,
+    "lng": 31.5367,
+    "description": "The Ndzhenga males were with a Kambula lioness and her four cubs at Princess Alice Pans ",
+    "date": "2025-05-18",
+    "location": "SabiSands",
+    "reserve": "Princess Alice Pans"
+  },
+  {
+    "id": 10048,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.8,
+    "lng": 31.54,
+    "description": "The Ndzhenga males were with the Ntsevu Pride at Piccadilly Triangle ",
+    "date": "2025-05-19",
+    "location": "SabiSands",
+    "reserve": "Piccadilly Triangle"
+  },
+  {
+    "id": 10049,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.782,
+    "lng": 31.545,
+    "description": "The Ndzhenga males were with two Kambula lionesses and the four youngest cubs north of Flockfield Tower ",
+    "date": "2025-05-20",
+    "location": "SabiSands",
+    "reserve": "North of Flockfield Tower"
+  },
+  {
+    "id": 10050,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.8075,
+    "lng": 31.5367,
+    "description": "One male of the Ndzhenga males was with them at Princess Alice Pans ",
+    "date": "2025-05-21",
+    "location": "SabiSands",
+    "reserve": "Princess Alice Pans"
+  },
+  {
+    "id": 10051,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.812,
+    "lng": 31.538,
+    "description": "The Ndzhenga males joined the Ntsevu Pride at the Airstrip ",
+    "date": "2025-05-24",
+    "location": "SabiSands",
+    "reserve": "Airstrip"
+  },
+  {
+    "id": 10052,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.8125,
+    "lng": 31.54,
+    "description": "The Ndzhenga males were with the Ntsevu Pride east of MalaMala Camp, where they found remains of an impala carcass ",
+    "date": "2025-05-25",
+    "location": "SabiSands",
+    "reserve": "East of MalaMala Camp"
+  },
+  {
+    "id": 10053,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.815,
+    "lng": 31.535,
+    "description": "One male of the Ndzhenga males joined the Ntsevu Pride on a waterbuck kill at Sandpit Crossing ",
+    "date": "2025-05-28",
+    "location": "SabiSands",
+    "reserve": "Sandpit Crossing"
+  },
+  {
+    "id": 10054,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.8075,
+    "lng": 31.5367,
+    "description": "The other male of the Ndzhenga males was in the area of Princess Alice Pans with the four youngest cubs ",
+    "date": "2025-05-29",
+    "location": "SabiSands",
+    "reserve": "Princess Alice Pans"
+  },
+  {
+    "id": 10055,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.775,
+    "lng": 31.525,
+    "description": "One male of the Ndzhenga males joined 12 members of the Kambula Pride south of West Street Bridge ",
+    "date": "2025-05-30",
+    "location": "SabiSands",
+    "reserve": "South of West Street Bridge"
+  },
+  {
+    "id": 10056,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.775,
+    "lng": 31.525,
+    "description": "Another male of the Ndzhenga males joined a lioness at the bridge ",
+    "date": "2025-05-30",
+    "location": "SabiSands",
+    "reserve": "West Street Bridge"
+  },
+  {
+    "id": 10057,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.812,
+    "lng": 31.54,
+    "description": "One male of the Ndzhenga males was with the Ntsevu Pride at the Old Airstrip ",
+    "date": "2025-05-30",
+    "location": "SabiSands",
+    "reserve": "Old Airstrip"
+  },
+  {
+    "id": 10058,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.82,
+    "lng": 31.53,
+    "description": "Another male of the Ndzhenga males was roaring at Wildebeest Crossing ",
+    "date": "2025-05-30",
+    "location": "SabiSands",
+    "reserve": "Wildebeest Crossing"
+  },
+  {
+    "id": 10059,
+    "name": "Gijima Coalition",
+    "lat": -24.9,
+    "lng": 31.5,
+    "description": "One male was mating with a Msuthu lioness north of Beaumont’s Camp He had fresh injuries on his face and body ",
+    "date": "2025-05-26",
+    "location": "SabiSands",
+    "reserve": "North of Beaumont’s Camp"
+  },
+  {
+    "id": 10060,
+    "name": "Torchwood Pride",
+    "lat": -24.85,
+    "lng": 31.52,
+    "description": "Six sub-adults of the Torchwood Pride were north of Matshapiri Dam ",
+    "date": "2025-05-15",
+    "location": "SabiSands",
+    "reserve": "North of Matshapiri Dam"
+  },
+  {
+    "id": 10061,
+    "name": "Torchwood Pride",
+    "lat": -24.87,
+    "lng": 31.51,
+    "description": "Seven members of the Torchwood Pride were southwest of Matshapiri Dam ",
+    "date": "2025-05-23",
+    "location": "SabiSands",
+    "reserve": "Southwest of Matshapiri Dam"
+  },
+  {
+    "id": 10062,
+    "name": "Torchwood Pride",
+    "lat": -24.875,
+    "lng": 31.515,
+    "description": "Five sub-adult males of the Torchwood Pride were found on an elephant carcass, with the Kruger and Southern Black Dam males, as well as two unknown young male lions (Nwatishaka pride), south of Matshapiri Dam ",
+    "date": "2025-05-24",
+    "location": "SabiSands",
+    "reserve": "South of Matshapiri Dam"
+  },
+  {
+    "id": 10063,
+    "name": "Torchwood Pride",
+    "lat": -24.875,
+    "lng": 31.515,
+    "description": "The Torchwood Pride were all in the same area south of Matshapiri Dam ",
+    "date": "2025-05-25",
+    "location": "SabiSands",
+    "reserve": "South of Matshapiri Dam"
+  },
+  {
+    "id": 10064,
+    "name": "The Plains Camp Males",
+    "lat": -24.784046474679624,
+    "lng": 31.467122222327475,
+    "description": "The two Plains Camp males snuck up and ambushed the Nkuhuma male and Talamati male while they were mating with one of the Ntsevu lionesses ",
+    "date": "2025-06-21",
+    "location": "SabiSands",
+    "reserve": "Londolozi"
+  },
+  {
+    "id": 10065,
+    "name": "Nkuhuma and Talamati Coalition",
+    "lat": -24.784046474679624,
+    "lng": 31.467122222327475,
+    "description": "The Nkuhuma and Talamati males were snuck up on and ambushed by the two Plains Camp males while they were mating with one of the Ntsevu lionesses ",
+    "date": "2025-06-21",
+    "location": "SabiSands",
+    "reserve": "Londolozi"
+  },
+  {
+    "id": 10066,
+    "name": "The Kambula Males",
+    "lat": -24.7080316900419,
+    "lng": 31.5366820917268,
+    "description": "All 4 Kambula males were seen on the dam camera  ",
+    "date": "2025-06-19",
+    "reserve": "Djuma Private Game Reserve",
+    "location": "SabiSands"
+  }
+]

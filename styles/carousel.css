@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent unwanted horizontal scrolling */
+  background: #f0f0f0;
+  font-family: Georgia, serif;
+}
+
+.carousel {
+  position: relative;
+  width: auto;
+  height: 550px;
+  margin: 0 auto;
+  isolation: isolate; /* Create new stacking context */
+  overflow: hidden; /* hide overflowing slides */
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 550px;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  pointer-events: none; /* Prevent interaction with hidden slides */
+  z-index: 0; /* base z-index */
+}
+
+.carousel-slide.visible {
+  opacity: 1;
+  z-index: 1;
+  pointer-events: auto; /* enable interaction with visible slide */
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 20px;
+  white-space: nowrap;
+  pointer-events: none; /* Prevent overlay from blocking interactions */
+}
+
+.overlay-text p {
+  margin: 0;
+}
+
+.lin a {
+  align-self: start;
+  margin-left: 20px;
+  padding: 12px 20px;
+  background-color: teal;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  border: none;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 16px;
+  pointer-events: auto; /* Enable interaction on link */
+}
+
+.lin a:hover {
+  background-color: #00b7b7;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .carousel-slide {
+    height: 400px;
+  }
+
+  .overlay-text {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    padding: 10px;
+    gap: 10px;
+    text-align: center;
+    white-space: normal;
+    width: 90%; /* limit width to screen */
+    max-width: 100%;
+  }
+
+  .lin a {
+    margin-left: 0;
+    align-self: center;
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}

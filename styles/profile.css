@@ -1,0 +1,252 @@
+/* Always include this at the top of your CSS */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+.data-display {
+  max-width: 100%;
+  background-color: #ffffff;
+  font-family: "Georgia", serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+
+.date {
+  padding-top: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title1 h1 {
+  font-size: 25px;
+  color: #1a202c;
+  text-align: center;
+  margin: 0;
+}
+
+.title-image {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.embbed {
+  background-color: #2d3748;
+  justify-content: center;
+  display: flex;
+}
+.link-ig {
+  padding: 10px;
+  width: 50%;
+  background-color: #fdfdfd;
+  display: flex;
+  border: 1px solid teal;
+  justify-content: center;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.title-image img {
+  width: 100%;
+  height: auto;
+}
+.intro {
+  padding: 20px;
+}
+.intro p {
+  font-size: 16px;
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 0px;
+  color: #555;
+}
+
+.content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.content .text-item {
+  margin-bottom: 2rem;
+}
+
+.content .text-item h3 {
+  font-size: 20px;
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.text-item {
+  padding-top: 0;
+}
+.content .text-item p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.content .image-item {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.content .image-item img {
+  width: 90%;
+  height: auto;
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+.content .image-item figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  border-bottom: 1px solid lightgray;
+  padding: 0 10px;
+}
+
+.credit {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  gap: 50px;
+  margin: 0 auto;
+  padding: 0 150px;
+}
+
+.credit img {
+  border-radius: 50%;
+  height: 150px;
+  margin-top: 75px;
+  width: 150px;
+}
+
+.about-author {
+  background-color: #fdfdfd;
+  border-left: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  font-family: "Georgia", serif;
+  color: #333;
+}
+
+.about-author p:first-child {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.1rem;
+  color: #2c3e50;
+}
+
+.about-author p:nth-child(2) {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #777;
+}
+
+.about-author p:last-child {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .data-display {
+    padding: 20px;
+  }
+  .embbed {
+    background-color: #2d3748;
+    justify-content: center;
+    display: flex;
+  }
+  .link-ig {
+    padding: 10px;
+    width: 90%;
+    background-color: #fdfdfd;
+    display: flex;
+    border: 1px solid teal;
+    justify-content: center;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .title1 h3 {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+
+  .title-image img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .intro p {
+    width: 95%;
+    font-size: 1rem;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .content .text-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .content .text-item p {
+    font-size: 0.95rem;
+  }
+
+  .content .image-item img {
+    width: 100%;
+  }
+
+  .credit {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .credit img {
+    margin-top: 0;
+    height: 120px;
+    width: 120px;
+  }
+
+  .about-author {
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .about-author p:first-child {
+    font-size: 1.1rem;
+  }
+
+  .about-author p:nth-child(2) {
+    font-size: 0.95rem;
+  }
+
+  .about-author p:last-child {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .date {
+    font-size: 0.95rem;
+    padding-top: 10px;
+  }
+}

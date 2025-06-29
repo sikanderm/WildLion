@@ -1,0 +1,131 @@
+/* 
+.liongrid-container {
+  width: 80%;
+}
+.body {
+  background-color: white;
+}
+
+
+.lion-grid.lion-sightings {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.lion-sightings {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+
+.lion-grid.slide-up {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.6s ease-out forwards;
+}
+.lion-sightings.slide-up {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+.lion-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.lion-sightings {
+  width: 80%;
+  margin: 20px auto 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  border-radius: 8px;
+}
+.sighting-title {
+  text-align: center;
+  background-color: white;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 80%;
+}
+
+
+@media (max-width: 768px) {
+  .sighting-title,
+  .lion-map {
+    width: 95%;
+    padding: 15px 10px;
+  }
+
+  .lion-sightings {
+    width: 95%;
+    margin: 20px auto 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    border-radius: 8px;
+  }
+
+  .home-title h1,
+  .home-title h2 {
+    font-size: 20px;
+  }
+
+  .lion-sightings {
+    width: 95%;
+    margin: 20px auto 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    border-radius: 8px;
+  }
+}
+*/
+.lion-map {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  background-color: white;
+}
+.home-title h1,
+.home-title h2 {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 10px;
+  color: #000000;
+}
+.home-title,
+.sighting-title {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  padding: 10px;
+  background-color: white;
+}

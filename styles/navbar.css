@@ -1,0 +1,149 @@
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: teal;
+  width: 100%;
+  margin: 0 auto;
+  height: 75px;
+}
+.nav-links li {
+  position: relative;
+  padding-left: 0px;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 0 25px 0 50px;
+  text-decoration: none;
+}
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.logo-container h2 {
+  color: white;
+  font-size: 30px;
+  font-family: Georgia, serif;
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  margin-left: auto;
+  padding-right: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #00b7b7;
+  border-radius: 25px;
+}
+
+.nav-links a:hover,
+.navbar a:hover {
+  text-decoration: none;
+}
+
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    align-items: center;
+  }
+  .nav-links ul {
+    padding: 0;
+    margin: 0;
+  }
+  .nav-links {
+    max-height: 0;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(-10px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none; /* 🔒 disables click events */
+    transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+  }
+  .nav-links a:hover {
+    background-color: #00b7b7;
+    border-radius: 25px;
+  }
+  .nav-links.open {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto; /* ✅ allows click events when open */
+  }
+
+  .logo-container {
+    padding-left: 0;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+
+  .logo-container h2 {
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-links li {
+    width: 100%;
+    display: flex; /* enables flexbox inside <li> */
+    justify-content: center; /* centers the <a> inside <li> */
+  }
+
+  .nav-links a {
+    display: inline-block;
+    text-align: center;
+    width: auto; /* or 100% if you want full width */
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+
+  .search-box {
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .logo-link {
+    padding-top: 20px;
+  }
+}

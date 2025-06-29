@@ -1,0 +1,215 @@
+[
+  {
+    "_id": {
+      "$oid": "67f395dda480ad8eb45364a0"
+    },
+    "id": 8,
+    "image": "/images/lionCards/gijimas.jpg",
+    "title": "Gijima Coalition",
+    "lionsCount": "2",
+    "yearsActive": "2017 - present.",
+    "location": "Southern Sabi Sands",
+    "reserve": "SabiSands"
+  },
+  {
+    "_id": {
+      "$oid": "67f395dda480ad8eb45364a1"
+    },
+    "id": 1,
+    "image": "/images/lionCards/nkhulus.jpg",
+    "title": "Nkhulu Coalition",
+    "lionsCount": "5 alive of 7",
+    "yearsActive": "2018 - present.",
+    "location": "Southern Sabi Sands",
+    "reserve": "SabiSands"
+  },
+  {
+    "_id": {
+      "$oid": "67f395dda480ad8eb45364a2"
+    },
+    "id": 2,
+    "image": "/images/lionCards/mantimahle.jpg",
+    "title": "Mantimahle Coalition",
+    "lionsCount": "2",
+    "yearsActive": "2016 - present.",
+    "location": "Northern Sabi Sands",
+    "reserve": "SabiSands"
+  },
+  {
+    "_id": {
+      "$oid": "67f395dda480ad8eb45364a3"
+    },
+    "id": 3,
+    "image": "/images/lionCards/ndhzengas.jpg",
+    "title": "Ndhzenga Coalition",
+    "lionsCount": "2 alive of 4",
+    "yearsActive": "2017 - present.",
+    "location": "Central Sabi Sands",
+    "reserve": "SabiSands"
+  },
+  {
+    "_id": {
+      "$oid": "67f395dda480ad8eb45364a4"
+    },
+    "id": 4,
+    "image": "/images/lionCards/plaincamps.jpeg",
+    "title": "The Plains Camp Males",
+    "lionsCount": "2",
+    "yearsActive": "2017 - present.",
+    "location": "Western Sabi Sands",
+    "reserve": "SabiSands"
+  },
+  {
+    "_id": {
+      "$oid": "67f395dda480ad8eb45364a5"
+    },
+    "id": 5,
+    "image": "/images/lionCards/kambulas.jpg",
+    "title": "Kambula Males",
+    "lionsCount": "4",
+    "yearsActive": "2018 - present.",
+    "location": "Sabi Sands",
+    "reserve": "SabiSands"
+  },
+  {
+    "_id": {
+      "$oid": "67f395dda480ad8eb45364a6"
+    },
+    "id": 6,
+    "image": "/images/lionCards/Nk+Kh.jpg",
+    "title": "Nkuhuma and Talamati Coalition",
+    "lionsCount": "2",
+    "yearsActive": "2016 - present.",
+    "location": "Sabi Sands",
+    "reserve": "SabiSands"
+  },
+  {
+    "_id": {
+      "$oid": "67f395dda480ad8eb45364a7"
+    },
+    "id": 7,
+    "image": "/images/lionCards/tumbelas.jpg",
+    "title": "Tumbela Coalition",
+    "lionsCount": "3",
+    "yearsActive": "2015 - present.",
+    "location": "Western Sabi Sands",
+    "reserve": "SabiSands"
+  },
+  {
+    "_id": {
+      "$oid": "67f395dda480ad8eb45364a9"
+    },
+    "id": 17,
+    "image": "/images/lionCards/othawa.jpg",
+    "title": "Othawa Pride",
+    "lionsCount": "6 ",
+    "yearsActive": "2000s - present.",
+    "location": "Western Sabi Sands",
+    "reserve": "SabiSands"
+  },
+  {
+    "_id": {
+      "$oid": "67f395dda480ad8eb45364aa"
+    },
+    "id": 9,
+    "image": "/images/lionCards/nkuhumas.jpg",
+    "title": "Nkuhuma Pride",
+    "lionsCount": "9 ",
+    "yearsActive": "2000s - present.",
+    "location": "Northern Sabi Sands",
+    "reserve": "SabiSands"
+  },
+  {
+    "_id": {
+      "$oid": "67f395dda480ad8eb45364ab"
+    },
+    "id": 10,
+    "image": "/images/lionCards/talamati.jpg",
+    "title": "Talamati Pride",
+    "lionsCount": "5 ",
+    "yearsActive": "2010s - present.",
+    "location": "Central Sabi Sands",
+    "reserve": "SabiSands"
+  },
+  {
+    "_id": {
+      "$oid": "67f395dda480ad8eb45364ac"
+    },
+    "id": 11,
+    "image": "/images/lionCards/styx.jpg",
+    "title": "Styx Pride",
+    "lionsCount": "4 ",
+    "yearsActive": "1990s - present.",
+    "location": "Eastern Sabi Sands",
+    "reserve": "SabiSands"
+  },
+  {
+    "_id": {
+      "$oid": "67f395dda480ad8eb45364ad"
+    },
+    "id": 12,
+    "image": "/images/lionCards/mhangeni.jpg",
+    "title": "Mhangeni Pride",
+    "lionsCount": "10 ",
+    "yearsActive": "2012 - present.",
+    "location": "Western-Central Sabi Sands",
+    "reserve": "SabiSands"
+  },
+  {
+    "_id": {
+      "$oid": "67f395dda480ad8eb45364ae"
+    },
+    "id": 13,
+    "image": "/images/lionCards/kambulasp.jpg",
+    "title": "Kambula Pride",
+    "lionsCount": "8 ",
+    "yearsActive": "2017 - present.",
+    "location": "Northern-Central Sabi Sands",
+    "reserve": "SabiSands"
+  },
+  {
+    "_id": {
+      "$oid": "67f395dda480ad8eb45364af"
+    },
+    "id": 14,
+    "image": "/images/lionCards/selati.jpg",
+    "title": "Southern Pride",
+    "lionsCount": "7 ",
+    "yearsActive": "1990s - present.",
+    "location": "Southern Sabi Sands",
+    "reserve": "SabiSands"
+  },
+  {
+    "_id": {
+      "$oid": "67f395dda480ad8eb45364b0"
+    },
+    "id": 15,
+    "image": "/images/lionCards/ximunghwe.jpg",
+    "title": "Ximunghwe Pride",
+    "lionsCount": "5 ",
+    "yearsActive": "2010s - present.",
+    "location": "Western Sabi Sands",
+    "reserve": "SabiSands"
+  },
+  {
+    "_id": {
+      "$oid": "67f395dda480ad8eb45364b1"
+    },
+    "id": 16,
+    "image": "/images/lionCards/torchwood.jpg",
+    "title": "Torchwood Pride",
+    "lionsCount": "6 ",
+    "yearsActive": "2010s - present.",
+    "location": "Northeastern Sabi Sands",
+    "reserve": "SabiSands"
+  },
+  {
+    "id": 20,
+    "image": "/images/lionCards/mapogo.jpg",
+    "title": "Mapogo Coalition",
+    "lionsCount": "6 ",
+    "yearsActive": "1998 - 2013.",
+    "location": "Sabi Sands",
+    "reserve": "SabiSands"
+  }
+]
