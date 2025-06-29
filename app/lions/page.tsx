@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import LionGrid from "@/components/LionGrid";
 import Head from "next/head";
 export const metadata = {
