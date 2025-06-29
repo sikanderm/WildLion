@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import Carousel from "@/components/Carousel";
 import LionGrid from "@/components/LionGrid";
 import LionMap from "@/components/LionMap";

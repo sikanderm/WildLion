@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import SightingsMap from "@/components/SightingsMap";
 import Head from "next/head";
 export const metadata = {
