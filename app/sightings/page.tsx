@@ -42,8 +42,8 @@ export const metadata = {
 };
 
 export default async function Sightings() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000/";
-
+  const baseUrl =
+    process.env.NEXT_PUBLIC_BASE_URL || "https://wildlion.vercel.app/";
   const sightingData = await fetch(`${baseUrl}/Data/liondb.sightings.json`, {
     next: { revalidate: 60 },
   });

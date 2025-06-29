@@ -11,8 +11,8 @@ export async function generateMetadata(props: { params: Params }) {
 export default async function DisplayProfile(props: { params: Params }) {
   const params = await props.params;
   const rcdId = params.id;
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000/";
-
+  const baseUrl =
+    process.env.NEXT_PUBLIC_BASE_URL || "https://wildlion.vercel.app/";
   const profileData = await fetch(`${baseUrl}/Data/liondb.lionprofiles.json`, {
     next: { revalidate: 60 },
   });

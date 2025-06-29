@@ -4,8 +4,8 @@ export type Props = { params: { id: string } };
 
 export async function getLionMetadata(params: { id: string }) {
   const { id } = params;
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000/";
-
+  const baseUrl =
+    process.env.NEXT_PUBLIC_BASE_URL || "https://wildlion.vercel.app/";
   const res = await fetch(`${baseUrl}/Data/liondb.lionprofiles.json`, {
     next: { revalidate: 60 },
   });
