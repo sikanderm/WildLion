@@ -50,16 +50,6 @@
     "location": "SabiSands"
   },
   {
-    "id": 9994,
-    "name": "Mhangeni Pride",
-    "lat": -24.820171201875656,
-    "lng": 31.444294370669372,
-    "description": "The Nkuhuma male with a Mangheni lioness ",
-    "date": "2025-05-29",
-    "reserve": "Western Singita",
-    "location": "SabiSands"
-  },
-  {
     "id": 9995,
     "name": "Nkuhuma and Talamati Coalition",
     "lat": -24.820171201875656,
@@ -127,16 +117,6 @@
     "description": "Dreadlocks Nkuhlu seen alone recently ",
     "date": "2025-06-07",
     "reserve": "Kirkman's Camp",
-    "location": "SabiSands"
-  },
-  {
-    "id": 10002,
-    "name": "The Ndzhenga Coalition",
-    "lat": -24.800093936033054,
-    "lng": 31.536051992797535,
-    "description": "The Ndhzenga males seen together ",
-    "date": "2025-06-08",
-    "reserve": "MalaMala",
     "location": "SabiSands"
   },
   {
@@ -774,9 +754,329 @@
     "name": "The Kambula Males",
     "lat": -24.7080316900419,
     "lng": 31.5366820917268,
-    "description": "All 4 Kambula males were seen on the dam camera  ",
+    "description": "All 4 Kambula males were seen on the dam camera ",
     "date": "2025-06-19",
     "reserve": "Djuma Private Game Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10007,
+    "name": "Mhangeni Pride",
+    "lat": -24.77563613588371,
+    "lng": 31.394632981581367,
+    "description": "Two Mangheni lionesses seen bonding ",
+    "date": "2025-06-18",
+    "reserve": "Inyati Game Lodge",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10008,
+    "name": "Mhangeni Pride",
+    "lat": -24.925623773257367,
+    "lng": 31.51304652856535,
+    "description": "Mangheni pride lionesses seen trailing buffalo ",
+    "date": "2025-07-03",
+    "reserve": "Sabi Sabi Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10009,
+    "name": "Mhangeni Pride",
+    "lat": -24.913558596610482,
+    "lng": 31.52111461270811,
+    "description": "One of the subadult Mangheni Pride females seen alone ",
+    "date": "2025-06-18",
+    "reserve": "Sabi Sabi Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10010,
+    "name": "Gijima Coalition",
+    "lat": -24.92313016462603,
+    "lng": 31.547378787140644,
+    "description": "Bigger Gijima male seen with one of their prides ",
+    "date": "2025-06-09",
+    "reserve": "River Lodge",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10011,
+    "name": "Gijima Coalition",
+    "lat": -24.81155101558946,
+    "lng": 31.481241369406366,
+    "description": "Gijima males seen further north of their usual territory ",
+    "date": "2025-06-18",
+    "reserve": "Londolozi",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10012,
+    "name": "Gijima Coalition",
+    "lat": -24.81155101558946,
+    "lng": 31.481241369406366,
+    "description": "Gijima males seen chasing Nkuhuma and Talamati male ",
+    "date": "2025-06-29",
+    "reserve": "Londolozi",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10012,
+    "name": "Nkuhuma and Talamati Coalition",
+    "lat": -24.81155101558946,
+    "lng": 31.481241369406366,
+    "description": "Nkuhuma and Talamati male were chased by Gijima males ",
+    "date": "2025-06-29",
+    "reserve": "Londolozi",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10013,
+    "name": "Gijima Coalition",
+    "lat": -24.86769052737773,
+    "lng": 31.536329819481793,
+    "description": "Both Gijima males seen walking through their territory ",
+    "date": "2025-06-29",
+    "reserve": "Umkumbe Bush Lodge",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10014,
+    "name": "Nkhulu Coalition",
+    "lat": -24.941851158923733,
+    "lng": 31.569391608805073,
+    "description": "3 Nkuhlu males were seen patrolling and roaring ",
+    "date": "2025-06-10",
+    "reserve": "Kirkman's Camp",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10015,
+    "name": "Nkhulu Coalition",
+    "lat": -24.96000417537224,
+    "lng": 31.54354145088382,
+    "description": "Crooked tail Nkuhlu male seen with the Sand River pride ",
+    "date": "2025-06-16",
+    "reserve": "Lion Sands Game Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10016,
+    "name": "Nkhulu Coalition",
+    "lat": -24.999386529164507,
+    "lng": 31.5637074155969,
+    "description": "4 Nkhulu males seen with an unknown pride ",
+    "date": "2025-06-18",
+    "reserve": "Skukuza Golf Course",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10017,
+    "name": "Nkhulu Coalition",
+    "lat": -24.954260392733914,
+    "lng": 31.51392561982241,
+    "description": "Snip tail and Dreadlocks Nkuhlu males seen ",
+    "date": "2025-06-25",
+    "reserve": "Lion Sands Game Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10018,
+    "name": "Nkhulu Coalition",
+    "lat": -24.835010292495536,
+    "lng": 31.541339403274755,
+    "description": "Snip tail and Smudge Nkuhlu males seen patrolling together ",
+    "date": "2025-06-29",
+    "reserve": "MalaMala",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10019,
+    "name": "Nkhulu Coalition",
+    "lat": -24.946053680085573,
+    "lng": 31.547290208094847,
+    "description": "All Nkuhlu males reunited and seen resting ",
+    "date": "2025-07-02",
+    "reserve": "Kirkman's Camp",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10020,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.74017342983172,
+    "lng": 31.596787388278752,
+    "description": "The smaller Ndhzenga male seen with a lioness ",
+    "date": "2025-06-16",
+    "reserve": "Nkorho Bush Lodge",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10021,
+    "name": "The Ndzhenga Coalition",
+    "lat": -24.749012304228373,
+    "lng": 31.58927631275078,
+    "description": "Both Ndhzenga males seen patrolling ",
+    "date": "2025-07-03",
+    "reserve": "Djuma Private Game Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10022,
+    "name": "The Plains Camp Males",
+    "lat": -24.803225064658747,
+    "lng": 31.399579910857078,
+    "description": "1 of the Plains Camp males seen roaring ",
+    "date": "2025-07-06",
+    "reserve": "Idube Game Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10023,
+    "name": "The Kambula Males",
+    "lat": -24.7080316900419,
+    "lng": 31.536682091727,
+    "description": "3 Kambula males were seen on the dam camera ",
+    "date": "2025-06-25",
+    "reserve": "Djuma Private Game Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10024,
+    "name": "Nkuhuma and Talamati Coalition",
+    "lat": -24.81022657413149,
+    "lng": 31.487850331948838,
+    "description": "The Nkuhuma male seen with the Talamati male ",
+    "date": "2025-07-06",
+    "reserve": "Londolozi",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10025,
+    "name": "Nkuhuma and Talamati Coalition",
+    "lat": -24.788553713946566,
+    "lng": 31.42194100146796,
+    "description": "The Nkuhuma and Talamati male were chased by the 2 Plains Camp males ",
+    "date": "2025-07-06",
+    "reserve": "Singita Ebony Lodge",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10025,
+    "name": "The Plains Camp Males",
+    "lat": -24.788553713946566,
+    "lng": 31.42194100146796,
+    "description": "The 2 Plains Camp males chased the Nkuhuma and Talamati male ",
+    "date": "2025-07-06",
+    "reserve": "Singita Ebony Lodge",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10026,
+    "name": "Ximunghwe Pride",
+    "lat": -24.802030625355084,
+    "lng": 31.350190715526928,
+    "description": "Ximungwe Pride were seen near the Othawa Pride cubs during a standoff with the neighboring pride ",
+    "date": "2025-07-06",
+    "reserve": "Ulusaba Private Game Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10026,
+    "name": "Othawa Pride",
+    "lat": -24.802030625355084,
+    "lng": 31.350190715526928,
+    "description": "Othawa Pride were seen next to the Ximungwe Pride during a standoff ",
+    "date": "2025-07-06",
+    "reserve": "Ulusaba Private Game Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10026,
+    "name": "Othawa Pride",
+    "lat": -24.77135957101856,
+    "lng": 31.389869353971523,
+    "description": "Othawa lioness with one cub were seen in the morning ",
+    "date": "2025-07-05",
+    "reserve": "Inyati Game Lodge",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10027,
+    "name": "Nkuhuma Pride",
+    "lat": -24.739580338624226,
+    "lng": 31.59846019576434,
+    "description": "Nkuhuma pride seen sharing an elephant carcass with the Kambula males ",
+    "date": "2025-06-28",
+    "reserve": "Djuma Private Game Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10027,
+    "name": "The Kambula Males",
+    "lat": -24.739580338624226,
+    "lng": 31.59846019576434,
+    "description": "Kambula males were seen sharing an elephant carcass with the Nkuhuma pride ",
+    "date": "2025-06-28",
+    "reserve": "Djuma Private Game Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10028,
+    "name": "Talamati Pride",
+    "lat": -24.93387411755437,
+    "lng": 31.50909831717634,
+    "description": "Talamati/Msutlu pride were seen with one of the Gijima males ",
+    "date": "2025-06-24",
+    "reserve": "Sabi Sabi Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10028,
+    "name": "Gijima Coalition",
+    "lat": -24.93387411755437,
+    "lng": 31.50909831717634,
+    "description": "One of the Gijima males were seen with the Talamati/Msutlu pride ",
+    "date": "2025-06-24",
+    "reserve": "Sabi Sabi Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10029,
+    "name": "Styx Pride",
+    "lat": -24.90195934652021,
+    "lng": 31.51896884564887,
+    "description": "Styx lioness nursing the latest litter of the pride ",
+    "date": "2025-06-03",
+    "reserve": "Sabi Sabi Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10030,
+    "name": "Styx Pride",
+    "lat": -24.98352017987693,
+    "lng": 31.524118686591056,
+    "description": "Styx pride cubs seen with one of the lionesses ",
+    "date": "2025-06-18",
+    "reserve": "Lion Sands Game Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10031,
+    "name": "Ximunghwe Pride",
+    "lat": -24.858565654056967,
+    "lng": 31.4007482931062,
+    "description": "Ximungwe Pride were seen ",
+    "date": "2025-05-27",
+    "reserve": "Savanna Private Game Reserve",
+    "location": "SabiSands"
+  },
+  {
+    "id": 10032,
+    "name": "Ximunghwe Pride",
+    "lat": -24.780623585437546,
+    "lng": 31.39197222978669,
+    "description": "Ximungwe Pride were seen on an impala kill ",
+    "date": "2025-06-28",
+    "reserve": "Inyati Game Lodge",
     "location": "SabiSands"
   }
 ]
