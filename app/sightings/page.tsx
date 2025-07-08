@@ -49,7 +49,10 @@ export default async function Sightings() {
   });
   const sighting = await sightingData.json();
 
-  const sightings = sighting.map((s: any, i: number) => ({ ...s, id: i + 1 }));
+  const sightings = sighting.map((s: any, i: number) => ({
+    ...s,
+    id: sighting.length - i,
+  }));
   return (
     <div>
       <Head>
