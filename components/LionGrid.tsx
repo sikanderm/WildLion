@@ -58,7 +58,7 @@ const LionGrid: React.FC<LionGridProps> = ({
       <div className="lion-grid">
         {lionData.map((lion) => (
           <Link
-            href={`/lions/${encodeURIComponent(lion.id)}`}
+            href={`/lions/${lion.title.split(" ").join("-")}`}
             key={lion.id}
             className="lion-link lion-card"
             onClick={() => window.scrollTo(0, 0)}

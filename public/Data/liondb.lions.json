@@ -1,38 +1,29 @@
 [
   {
-    "_id": {
-      "$oid": "67f395dda480ad8eb45364a0"
-    },
     "id": 8,
     "image": "/images/lionCards/gijimas.jpg",
     "title": "Gijima Coalition",
-    "lionsCount": "2",
+    "lionsCount": "3",
     "yearsActive": "2017 - present.",
     "location": "Southern Sabi Sands",
     "reserve": "SabiSands"
   },
   {
-    "_id": {
-      "$oid": "67f395dda480ad8eb45364a1"
-    },
+    "id": 2,
+    "image": "/images/lionCards/mantimahle.jpg",
+    "title": "Mantimahle Coalition",
+    "lionsCount": "5",
+    "yearsActive": "2016 - present.",
+    "location": "Northern Sabi Sands",
+    "reserve": "SabiSands"
+  },
+  {
     "id": 1,
     "image": "/images/lionCards/nkhulus.jpg",
     "title": "Nkhulu Coalition",
     "lionsCount": "5 alive of 7",
     "yearsActive": "2018 - present.",
     "location": "Southern Sabi Sands",
-    "reserve": "SabiSands"
-  },
-  {
-    "_id": {
-      "$oid": "67f395dda480ad8eb45364a2"
-    },
-    "id": 2,
-    "image": "/images/lionCards/mantimahle.jpg",
-    "title": "Mantimahle Coalition",
-    "lionsCount": "2",
-    "yearsActive": "2016 - present.",
-    "location": "Northern Sabi Sands",
     "reserve": "SabiSands"
   },
   {

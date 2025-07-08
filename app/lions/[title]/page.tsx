@@ -2,26 +2,37 @@ import Head from "next/head";
 import ProfileDisplay from "@/components/Profile";
 import { Metadata } from "next";
 import { getLionMetadata } from "../../../libs/lions";
-type Params = Promise<{ id: string }>;
+type Params = { title: string };
 
-export async function generateMetadata(props: { params: Params }) {
-  const params = await props.params;
-  return getLionMetadata(params); // ✅ .id is safely accessible
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<Params>;
+}) {
+  const resolvedParams = await params;
+  return getLionMetadata(resolvedParams); // Assumes function handles the shape
 }
-export default async function DisplayProfile(props: { params: Params }) {
-  const params = await props.params;
-  const rcdId = params.id;
+
+export default async function DisplayProfile({
+  params,
+}: {
+  params: Promise<Params>;
+}) {
+  const { title: profileTitle } = await params;
+  const spacedTitle = profileTitle.replace(/-/g, " ");
+
   const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || "https://wildlion.vercel.app/";
+    process.env.NEXT_PUBLIC_BASE_URL || "https://wildlion.vercel.app";
+
   const profileData = await fetch(`${baseUrl}/Data/liondb.lionprofiles.json`, {
     next: { revalidate: 60 },
   });
-
   const data = await profileData.json();
 
-  const profile = await data.find(
-    (item: { id: number | string }) => item.id.toString() === rcdId
+  const profile = data.find(
+    (item: { title: string }) => item.title.trim() === spacedTitle.trim()
   );
+
   const sightingData = await fetch(`${baseUrl}/Data/liondb.sightings.json`, {
     next: { revalidate: 60 },
   });

@@ -22,7 +22,7 @@ export default function RelatedLions({ lions }: { lions: Lion[] }) {
       <div className="related-grid">
         {lions.map((lion) => (
           <Link
-            href={`/lions/${encodeURIComponent(lion.id)}`}
+            href={`/lions/${lion.title.split(" ").join("-")}`}
             key={lion.id}
             className="related-link"
           >
