@@ -49,10 +49,15 @@ export default async function Sightings() {
   });
   const sighting = await sightingData.json();
 
-  const sightings = sighting.map((s: any, i: number) => ({
+  const sortedSightings = [...sighting].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+
+  const updatedSightings = sortedSightings.map((s, index) => ({
     ...s,
-    id: sighting.length - i,
+    id: sortedSightings.length - index, // 1 = most recent
   }));
+
   return (
     <div>
       <Head>
@@ -68,7 +73,7 @@ export default async function Sightings() {
           }}
         />
       </Head>
-      <SightingsMap sightings={sightings} />
+      <SightingsMap sightings={updatedSightings} />
     </div>
   );
 }

@@ -60,8 +60,8 @@ export default async function Home() {
   const sighting = await sightingData.json();
 
   const sightings = sighting
-    .slice(0, 10)
-    .map((s: any, i: number) => ({ ...s, id: i + 1 }));
+    .slice(sighting.length - 10, sighting.length)
+    .map((s: any, i: number) => ({ ...s, id: 10 - i }));
 
   const lionData = await fetch(`${baseUrl}/Data/liondb.lions.json`, {
     next: { revalidate: 60 },

@@ -29,7 +29,7 @@ export default async function DisplayProfile(props: { params: Params }) {
 
   const filterTitle = sighting
     .filter((s: any) => s.name === profile?.title) // match profile title
-    .map((s: any, i: number) => ({ ...s, id: i + 1 }));
+    .map((s: any, i: number) => ({ ...s, id: sighting.length - i }));
 
   const sortedSightings = [...filterTitle].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
