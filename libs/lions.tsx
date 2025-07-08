@@ -1,9 +1,11 @@
 import { Metadata } from "next";
 
-export type Props = { params: { title: string } };
+export type Params = { params: { title: string } };
 
 export async function getLionMetadata(params: { title: string }) {
   const { title } = params;
+
+  const spacedTitle = title.replace(/-/g, " ");
   const baseUrl =
     process.env.NEXT_PUBLIC_BASE_URL || "https://wildlion.vercel.app/";
   const res = await fetch(`${baseUrl}/Data/liondb.lionprofiles.json`, {
@@ -11,11 +13,9 @@ export async function getLionMetadata(params: { title: string }) {
   });
 
   const data = await res.json();
-  data.map((lion: { title: string }) => ({
-    id: lion.title.toString(),
-  }));
+
   const profile = data.find(
-    (item: { title: string }) => item.title.toString() === title
+    (item: { title: string }) => item.title.trim() === spacedTitle.trim()
   );
 
   if (!profile) {

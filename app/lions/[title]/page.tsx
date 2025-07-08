@@ -4,13 +4,14 @@ import { Metadata } from "next";
 import { getLionMetadata } from "../../../libs/lions";
 type Params = { title: string };
 
+// This function expects a params object wrapped in a promise
 export async function generateMetadata({
   params,
 }: {
   params: Promise<Params>;
 }) {
   const resolvedParams = await params;
-  return getLionMetadata(resolvedParams); // Assumes function handles the shape
+  return getLionMetadata(resolvedParams); // Assuming this handles the shape correctly
 }
 
 export default async function DisplayProfile({
