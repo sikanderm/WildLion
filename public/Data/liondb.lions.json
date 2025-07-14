@@ -202,5 +202,14 @@
     "yearsActive": "1998 - 2013.",
     "location": "Sabi Sands",
     "reserve": "SabiSands"
+  },
+  {
+    "id": 18,
+    "image": "/images/lionCards/majingilane.jpg",
+    "title": "Majingilane Coalition",
+    "lionsCount": "5 ",
+    "yearsActive": "2005 - 2018.",
+    "location": "Northern Sabi Sands",
+    "reserve": "SabiSands"
   }
 ]
