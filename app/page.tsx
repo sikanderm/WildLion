@@ -49,6 +49,10 @@ export const metadata = {
       },
     ],
   },
+  icons: {
+    icon: "/favicon.ico",
+  },
+  metadataBase: new URL("https://wildlion.vercel.app/"),
 };
 
 export default async function Home() {

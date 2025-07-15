@@ -30,7 +30,7 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  metadataBase: new URL("http://localhost:3000/"),
+  metadataBase: new URL("https://wildlion.vercel.app/lions"),
 };
 
 export default async function Home() {
