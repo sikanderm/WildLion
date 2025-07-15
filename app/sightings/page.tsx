@@ -29,7 +29,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://wildlion.vercel.app/favicon.png",
+        url: "https://wildlion.vercel.app/favicon.ico",
         width: 512,
         height: 512,
         alt: "WildLion",
