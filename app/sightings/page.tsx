@@ -19,17 +19,17 @@ export const metadata = {
   ],
   authors: [{ name: "WildLion" }],
   alternates: {
-    canonical: "http://localhost:3000//sightings",
+    canonical: "https://wildlion.vercel.app/sightings",
   },
   openGraph: {
     title: "Recently Reported Sightings of Lions",
     description:
       "Discover dominant lion coalitions and prides with map-based sightings data in Kruger and Sabi Sands.",
-    url: "http://localhost:3000//sightings",
+    url: "https://wildlion.vercel.app/sightings",
     type: "website",
     images: [
       {
-        url: "http://localhost:3000//favicon.png",
+        url: "https://wildlion.vercel.app/favicon.png",
         width: 512,
         height: 512,
         alt: "WildLion",
@@ -67,8 +67,8 @@ export default async function Sightings() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              url: "http://localhost:3000/",
-              logo: "http://localhost:3000//favicon.png",
+              url: "https://wildlion.vercel.app/sightings",
+              logo: "https://wildlion.vercel.app/favicon.png",
             }),
           }}
         />

@@ -29,16 +29,16 @@ export async function getLionMetadata(params: { title: string }) {
     title: `${profile.title} | Lion Profile`,
     description: `Explore the life, history, and sightings of ${profile.title}, a lion from Kruger or Sabi Sands.`,
     alternates: {
-      canonical: `http://localhost:3000//profile/${profile.id}`,
+      canonical: `https://wildlion.vercel.app/lions/${spacedTitle}`,
     },
     openGraph: {
       title: `${profile.title} | Lion Profile`,
       description: `Explore the legacy of ${profile.title} including recent sightings, pride info, and related lions.`,
-      url: `http://localhost:3000//profile/${profile.id}`,
+      url: `https://wildlion.vercel.app/lions/${spacedTitle}`,
       type: "profile",
       images: [
         {
-          url: "http://localhost:3000//favicon.png",
+          url: "`https://wildlion.vercel.app/favicon.png",
           width: 512,
           height: 512,
           alt: profile.title,

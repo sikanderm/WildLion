@@ -10,17 +10,17 @@ export const metadata = {
     "Kruger lions, Sabi Sands, lion sightings, lion coalitions, lion prides, African safari, lion profiles, big cats, lions, MalaMala, Londolozi, Mapogo, Majingilane",
   authors: [{ name: "WildLion" }],
   alternates: {
-    canonical: "http://localhost:3000//",
+    canonical: "https://wildlion.vercel.app/lions",
   },
   openGraph: {
     title: "Recent Lion Sightings in Kruger & Sabi Sands",
     description:
       "Track the latest lion sightings in Kruger National Park and Sabi Sands. Discover dominant coalitions and lion prides with detailed profiles.",
-    url: "http://localhost:3000//",
+    url: "https://wildlion.vercel.app/lions",
     type: "website",
     images: [
       {
-        url: "http://localhost:3000//favicon.png",
+        url: "https://wildlion.vercel.app/favicon.png",
         alt: "WildLion",
         width: 512,
         height: 512,
@@ -52,7 +52,7 @@ export default async function Home() {
                 "@context": "https://schema.org",
                 "@type": "Organization",
                 url: "http://localhost:3000/",
-                logo: "http://localhost:3000//favicon.png",
+                logo: "https://wildlion.vercel.app/favicon.png",
               }),
             }}
           />

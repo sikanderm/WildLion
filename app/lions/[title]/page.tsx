@@ -70,8 +70,7 @@ export default async function DisplayProfile({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              url: "http://localhost:3000/",
-              logo: "http://localhost:3000//favicon.png",
+              logo: "https://wildlion.vercel.app/favicon.png",
             }),
           }}
         />
