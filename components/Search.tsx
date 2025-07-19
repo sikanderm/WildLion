@@ -16,7 +16,6 @@ export default function Search() {
   const [data, setData] = useState<Lion[]>([]);
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [isFocused, setIsFocused] = useState<boolean>(false);
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -81,7 +80,9 @@ export default function Search() {
           {filteredData.map((item, index) => (
             <li key={index} className="drop-li">
               <Link
-                href={`/lions/${encodeURIComponent(item.id)}`}
+                href={`/lions/${encodeURIComponent(
+                  item.title.replace(/\s+/g, "-")
+                )}`}
                 key={index}
                 onClick={() => setSearchTerm("")}
                 className="drop-link"
