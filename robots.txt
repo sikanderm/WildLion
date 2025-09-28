@@ -1,1 +1,1 @@
-Sitemap: https://wildlion.vercel.app/lion.xml
+Sitemap: https://thewildlion.org/lion.xml

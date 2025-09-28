@@ -22,8 +22,7 @@ export default async function DisplayProfile({
   const { title: profileTitle } = await params;
   const spacedTitle = profileTitle.replace(/-/g, " ");
 
-  const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || "https://wildlion.vercel.app";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://thewildlion.org";
 
   const profileData = await fetch(`${baseUrl}/Data/liondb.lionprofiles.json`, {
     next: { revalidate: 60 },
@@ -70,7 +69,7 @@ export default async function DisplayProfile({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              logo: "https://wildlion.vercel.app/favicon.ico",
+              logo: "https://thewildlion.org/favicon.ico",
             }),
           }}
         />

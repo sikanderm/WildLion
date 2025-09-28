@@ -32,17 +32,17 @@ export const metadata = {
   ],
   authors: [{ name: "WildLion" }],
   alternates: {
-    canonical: "https://wildlion.vercel.app/",
+    canonical: "https://thewildlion.org/",
   },
   openGraph: {
     title: "Recent Lion Sightings in Kruger & Sabi Sands",
     description:
       "Track the latest lion sightings in Kruger National Park and Sabi Sands. Discover dominant coalitions and lion prides with detailed profiles.",
-    url: "https://wildlion.vercel.app/",
+    url: "https://thewildlion.org/",
     type: "website",
     images: [
       {
-        url: "https://wildlion.vercel.app/favicon.ico",
+        url: "https://thewildlion.org/favicon.ico",
         width: 512,
         height: 512,
         alt: "The Wild Lion Logo",
@@ -52,12 +52,12 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  metadataBase: new URL("https://wildlion.vercel.app/"),
+  metadataBase: new URL("https://thewildlion.org/"),
 };
 
 export default async function Home() {
   const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || "https://wildlion.vercel.app/";
+    process.env.NEXT_PUBLIC_BASE_URL || "https://thewildlion.org/";
   const sightingData = await fetch(`${baseUrl}/Data/liondb.sightings.json`, {
     next: { revalidate: 60 },
   });
@@ -82,8 +82,8 @@ export default async function Home() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              url: "https://wildlion.vercel.app/",
-              logo: "https://wildlion.vercel.app/favicon.png",
+              url: "https://thewildlion.org/",
+              logo: "https://thewildlion.org/favicon.png",
             }),
           }}
         />

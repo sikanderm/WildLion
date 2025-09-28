@@ -8,17 +8,17 @@ export const metadata = {
     "WildLion, lion conservation, lion prides, lion coalitions, wildlife community, big cats, Kruger lions, Sabi Sands, lion research",
   authors: [{ name: "WildLion Team" }],
   alternates: {
-    canonical: "https://wildlion.vercel.app/about",
+    canonical: "https://thewildlion.org/about",
   },
   openGraph: {
     title: "About WildLion",
     description:
       "Discover the vision behind WildLion — documenting lion prides and coalitions while connecting a global community of wildlife enthusiasts.",
-    url: "https://wildlion.vercel.app/about",
+    url: "https://thewildlion.org/about",
     type: "website",
     images: [
       {
-        url: "https://wildlion.vercel.app/favicon.ico",
+        url: "https://thewildlion.org/favicon.ico",
         width: 512,
         height: 512,
         alt: "WildLion Logo",
@@ -29,7 +29,7 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  metadataBase: new URL("https://wildlion.vercel.app/about"),
+  metadataBase: new URL("https://thewildlion.org/about"),
 };
 
 export default function AboutPage() {

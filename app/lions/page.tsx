@@ -10,17 +10,17 @@ export const metadata = {
     "Kruger lions, Sabi Sands, lion sightings, lion coalitions, lion prides, African safari, lion profiles, big cats, lions, MalaMala, Londolozi, Mapogo, Majingilane",
   authors: [{ name: "WildLion" }],
   alternates: {
-    canonical: "https://wildlion.vercel.app/lions",
+    canonical: "https://thewildlion.org/lions",
   },
   openGraph: {
     title: "Recent Lion Sightings in Kruger & Sabi Sands",
     description:
       "Track the latest lion sightings in Kruger National Park and Sabi Sands. Discover dominant coalitions and lion prides with detailed profiles.",
-    url: "https://wildlion.vercel.app/lions",
+    url: "https://thewildlion.org/lions",
     type: "website",
     images: [
       {
-        url: "https://wildlion.vercel.app/favicon.ico",
+        url: "https://thewildlion.org/favicon.ico",
         alt: "WildLion",
         width: 512,
         height: 512,
@@ -30,12 +30,12 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  metadataBase: new URL("https://wildlion.vercel.app/lions"),
+  metadataBase: new URL("https://thewildlion.org/lions"),
 };
 
 export default async function Home() {
   const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || "https://wildlion.vercel.app/";
+    process.env.NEXT_PUBLIC_BASE_URL || "https://thewildlion.org/";
   const lionData = await fetch(`${baseUrl}/Data/liondb.lions.json`, {
     next: { revalidate: 60 },
   });
@@ -52,7 +52,7 @@ export default async function Home() {
                 "@context": "https://schema.org",
                 "@type": "Organization",
                 url: "http://localhost:3000/",
-                logo: "https://wildlion.vercel.app/favicon.png",
+                logo: "https://thewildlion.org/favicon.png",
               }),
             }}
           />

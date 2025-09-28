@@ -26,7 +26,7 @@ const writeStream = fs.createWriteStream(
   path.resolve(__dirname, "public", "sitemap.xml")
 );
 const sitemapStream = new SitemapStream({
-  hostname: "https://wildlion.vercel.app",
+  hostname: "https://thewildlion.org",
 });
 
 // Pipe the sitemapStream to the writeStream

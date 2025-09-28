@@ -7,7 +7,7 @@ export async function getLionMetadata(params: { title: string }) {
 
   const spacedTitle = title.replace(/-/g, " ");
   const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || "https://wildlion.vercel.app/";
+    process.env.NEXT_PUBLIC_BASE_URL || "https://thewildlion.org/";
   const res = await fetch(`${baseUrl}/Data/liondb.lionprofiles.json`, {
     next: { revalidate: 60 },
   });
@@ -29,16 +29,16 @@ export async function getLionMetadata(params: { title: string }) {
     title: `${profile.title} | Lion Profile`,
     description: `Explore the life, history, and sightings of ${profile.title}, a lion from Kruger or Sabi Sands.`,
     alternates: {
-      canonical: `https://wildlion.vercel.app/lions/${title}`,
+      canonical: `https://thewildlion.org/lions/${title}`,
     },
     openGraph: {
       title: `${profile.title} | Lion Profile`,
       description: `Explore the legacy of ${profile.title} including recent sightings, pride info, and related lions.`,
-      url: `https://wildlion.vercel.app/lions/${title}`,
+      url: `https://thewildlion.org/lions/${title}`,
       type: "profile",
       images: [
         {
-          url: "`https://wildlion.vercel.app/favicon.ico",
+          url: "`https://thewildlion.org/favicon.ico",
           width: 512,
           height: 512,
           alt: profile.title,
