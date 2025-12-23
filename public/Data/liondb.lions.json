@@ -211,5 +211,14 @@
     "yearsActive": "2005 - 2018.",
     "location": "Northern Sabi Sands",
     "reserve": "SabiSands"
+  },
+  {
+    "id": 35,
+    "image": "/images/lionCards/mbiris.jpg",
+    "title": "Mbiri Male Lions",
+    "lionsCount": "3 ",
+    "yearsActive": "2013 - 2025.",
+    "location": "Timbavati",
+    "reserve": "Timbavati"
   }
 ]

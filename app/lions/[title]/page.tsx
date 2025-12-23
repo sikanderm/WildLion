@@ -22,7 +22,7 @@ export default async function DisplayProfile({
   const { title: profileTitle } = await params;
   const spacedTitle = profileTitle.replace(/-/g, " ");
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://thewildlion.org";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
   const profileData = await fetch(`${baseUrl}/Data/liondb.lionprofiles.json`, {
     next: { revalidate: 60 },

@@ -34,8 +34,7 @@ export const metadata = {
 };
 
 export default async function Home() {
-  const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || "https://thewildlion.org/";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://thewildlion.org";
   const lionData = await fetch(`${baseUrl}/Data/liondb.lions.json`, {
     next: { revalidate: 60 },
   });
