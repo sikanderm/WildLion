@@ -24,7 +24,7 @@ export async function getLionMetadata(params: { title: string }) {
       description: "This lion profile could not be found.",
     };
   }
-
+  const slug = profile.title.trim().replace(" ", "-");
   const profileTitle = profile.title.trim().split(" ");
   const name = profileTitle[0];
   const lionType = profileTitle[1];
@@ -44,7 +44,7 @@ export async function getLionMetadata(params: { title: string }) {
         "Kruger lions",
       ],
       alternates: {
-        canonical: `https://thewildlion.org/lions/${title}`,
+        canonical: `https://thewildlion.org/lions/${slug}`,
       },
       openGraph: {
         title: `${profile.title} | Lion Profile`,
@@ -53,12 +53,26 @@ export async function getLionMetadata(params: { title: string }) {
         type: "profile",
         images: [
           {
-            url: "`https://thewildlion.org/favicon.ico",
+            url: "https://thewildlion.org/favicon.ico",
             width: 512,
             height: 512,
             alt: profile.title,
           },
         ],
+      },
+      structuredData: {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: profile.title,
+        description: `Explore sightings, history, and territory of ${profile.title}.`,
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": `https://thewildlion.org/lions/${slug}`,
+        },
+        author: {
+          "@type": "Organization",
+          name: "The Wild Lion",
+        },
       },
     };
   } else {
@@ -76,7 +90,7 @@ export async function getLionMetadata(params: { title: string }) {
         "Kruger lions",
       ],
       alternates: {
-        canonical: `https://thewildlion.org/lions/${title}`,
+        canonical: `https://thewildlion.org/lions/${slug}`,
       },
       openGraph: {
         title: `${profile.title}`,
@@ -85,12 +99,26 @@ export async function getLionMetadata(params: { title: string }) {
         type: "profile",
         images: [
           {
-            url: "`https://thewildlion.org/favicon.ico",
+            url: "https://thewildlion.org/favicon.ico",
             width: 512,
             height: 512,
             alt: profile.title,
           },
         ],
+      },
+      structuredData: {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: profile.title,
+        description: `Explore sightings, history, and territory of ${profile.title}.`,
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": `https://thewildlion.org/lions/${slug}`,
+        },
+        author: {
+          "@type": "Organization",
+          name: "The Wild Lion",
+        },
       },
     };
   }
