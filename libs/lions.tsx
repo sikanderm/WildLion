@@ -26,8 +26,8 @@ export async function getLionMetadata(params: { title: string }) {
   }
   const slug = profile.title.trim().replace(" ", "-");
   const profileTitle = profile.title.trim().split(" ");
-  const name = profileTitle[0];
-  const lionType = profileTitle[1];
+  const name = profileTitle.slice(0, -1).join(" ");
+  const lionType = profileTitle.join[profileTitle.length - 1];
 
   if (lionType == "Coalition") {
     return {
