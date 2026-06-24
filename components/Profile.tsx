@@ -90,7 +90,7 @@ export default function ProfileDisplay({
           if (item.type === "text") {
             return (
               <div key={index} className="text-item">
-                <h3>{item.heading}</h3>
+                {item.heading && <h3>{item.heading}</h3>}
 
                 <ReactMarkdown>{item.paragraph}</ReactMarkdown>
               </div>
