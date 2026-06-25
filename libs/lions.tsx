@@ -32,7 +32,7 @@ export async function getLionMetadata(params: { title: string }) {
   if (lionType == "Coalition") {
     return {
       title: `${profile.title}`,
-      description: `Explore the life, history, and sightings of ${profile.title}, a group of male lions from Kruger or Sabi Sands.`,
+      description: `Explore the life, history, and sightings of ${profile.title}, a ${lionType} of lions from Kruger or Sabi Sands.`,
       keywords: [
         profile.title,
         `${name} Males`,
@@ -78,7 +78,7 @@ export async function getLionMetadata(params: { title: string }) {
   } else {
     return {
       title: `${profile.title}`,
-      description: `Explore the life, history, and sightings of ${profile.title}, a lion from Kruger or Sabi Sands.`,
+      description: `Explore the life, history, and sightings of ${profile.title}, a ${lionType} of lions from Kruger or Sabi Sands.`,
       keywords: [
         profile.title,
         `${name} Females`,
