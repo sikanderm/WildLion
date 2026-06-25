@@ -56,9 +56,8 @@ export const metadata = {
 };
 
 export default async function Home() {
-  const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || "https://thewildlion.org/";
-  const sightingData = await fetch(`${baseUrl}/Data/liondb.sightings.json`, {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000/";
+  const sightingData = await fetch(`${baseUrl}/api/sightings`, {
     next: { revalidate: 60 },
   });
   const sighting = await sightingData.json();
@@ -67,7 +66,7 @@ export default async function Home() {
     .slice(sighting.length - 10, sighting.length)
     .map((s: any, i: number) => ({ ...s, id: 10 - i }));
 
-  const lionData = await fetch(`${baseUrl}/Data/liondb.lions.json`, {
+  const lionData = await fetch(`${baseUrl}/api/lions`, {
     next: { revalidate: 60 },
   });
   const lion = await lionData.json();

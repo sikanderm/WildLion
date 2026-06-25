@@ -19,7 +19,7 @@ export default function Search() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/Data/liondb.lions.json");
+        const response = await fetch("/api/lions");
         if (!response.ok) throw new Error("Network response was not ok");
         const lionsData: Lion[] = await response.json();
         setData(lionsData);
@@ -36,7 +36,7 @@ export default function Search() {
   };
 
   const filteredData = data.filter((item) =>
-    item.title.toLowerCase().includes(searchTerm.toLowerCase())
+    item.title.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   const showDropdown =
@@ -81,7 +81,7 @@ export default function Search() {
             <li key={index} className="drop-li">
               <Link
                 href={`/lions/${encodeURIComponent(
-                  item.title.replace(/\s+/g, "-")
+                  item.title.replace(/\s+/g, "-"),
                 )}`}
                 key={index}
                 onClick={() => setSearchTerm("")}

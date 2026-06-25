@@ -24,16 +24,16 @@ export default async function DisplayProfile({
 
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000/";
 
-  const profileData = await fetch(`${baseUrl}/Data/liondb.lionprofiles.json`, {
+  const profileData = await fetch(`${baseUrl}/api/profile`, {
     next: { revalidate: 60 },
   });
   const data = await profileData.json();
 
   const profile = data.find(
-    (item: { title: string }) => item.title.trim() === spacedTitle.trim()
+    (item: { title: string }) => item.title.trim() === spacedTitle.trim(),
   );
 
-  const sightingData = await fetch(`${baseUrl}/Data/liondb.sightings.json`, {
+  const sightingData = await fetch(`${baseUrl}/api/sightings`, {
     next: { revalidate: 60 },
   });
   const sighting = await sightingData.json();
@@ -41,7 +41,7 @@ export default async function DisplayProfile({
   const filterTitle = sighting.filter((s: any) => s.name === profile?.title);
 
   const sortedSightings = [...filterTitle].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
   );
 
   const sightings = sortedSightings.map((s: any, i: number) => ({
@@ -49,14 +49,14 @@ export default async function DisplayProfile({
     id: sortedSightings.length - i,
   }));
 
-  const lionData = await fetch(`${baseUrl}/Data/liondb.lions.json`, {
+  const lionData = await fetch(`${baseUrl}/api/lions`, {
     next: { revalidate: 60 },
   });
   const lion = await lionData.json();
   const lions = profile?.mentioned
     ? lion.filter(
         (s: { title?: string }) =>
-          s.title && profile.mentioned.includes(s.title)
+          s.title && profile.mentioned.includes(s.title),
       )
     : [];
   console.log(lions);

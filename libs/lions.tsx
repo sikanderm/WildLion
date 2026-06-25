@@ -6,9 +6,8 @@ export async function getLionMetadata(params: { title: string }) {
   const { title } = params;
 
   const spacedTitle = title.replace(/-/g, " ");
-  const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || "https://thewildlion.org/";
-  const res = await fetch(`${baseUrl}/Data/liondb.lionprofiles.json`, {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000/";
+  const res = await fetch(`${baseUrl}/api/profile`, {
     next: { revalidate: 60 },
   });
 

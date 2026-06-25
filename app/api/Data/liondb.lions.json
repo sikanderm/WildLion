@@ -1,7 +1,7 @@
 [
   {
     "id": 8,
-    "image": "/images/lionCards/gijimas.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/gijimas.jpg",
     "title": "Gijima Coalition",
     "lionsCount": "3",
     "yearsActive": "2017 - present.",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "image": "/images/lionCards/mantimahle.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/mantimahle.jpg",
     "title": "Mantimahle Coalition",
     "lionsCount": "5",
     "yearsActive": "2016 - present.",
@@ -19,7 +19,7 @@
   },
   {
     "id": 1,
-    "image": "/images/lionCards/nkhulus.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/nkhulus.jpg",
     "title": "Nkhulu Coalition",
     "lionsCount": "5 alive of 7",
     "yearsActive": "2018 - present.",
@@ -31,7 +31,7 @@
       "$oid": "67f395dda480ad8eb45364a3"
     },
     "id": 3,
-    "image": "/images/lionCards/ndhzengas.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/ndhzengas.jpg",
     "title": "Ndhzenga Coalition",
     "lionsCount": "2 alive of 4",
     "yearsActive": "2017 - present.",
@@ -43,7 +43,7 @@
       "$oid": "67f395dda480ad8eb45364a4"
     },
     "id": 4,
-    "image": "/images/lionCards/plaincamps.jpeg",
+    "image": "https://www.thewildlion.org/images/lionCards/plaincamps.jpeg",
     "title": "Plains Camp Coalition",
     "lionsCount": "2",
     "yearsActive": "2017 - present.",
@@ -55,7 +55,7 @@
       "$oid": "67f395dda480ad8eb45364a5"
     },
     "id": 5,
-    "image": "/images/lionCards/kambulas.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/kambulas.jpg",
     "title": "Kambula Coalition",
     "lionsCount": "4",
     "yearsActive": "2018 - present.",
@@ -67,7 +67,7 @@
       "$oid": "67f395dda480ad8eb45364a6"
     },
     "id": 6,
-    "image": "/images/lionCards/Nk+Kh.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/Nk+Kh.jpg",
     "title": "Nkuhuma and Talamati Coalition",
     "lionsCount": "2",
     "yearsActive": "2016 - present.",
@@ -79,7 +79,7 @@
       "$oid": "67f395dda480ad8eb45364a7"
     },
     "id": 7,
-    "image": "/images/lionCards/tumbelas.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/tumbelas.jpg",
     "title": "Tumbela Coalition",
     "lionsCount": "3",
     "yearsActive": "2015 - present.",
@@ -91,7 +91,7 @@
       "$oid": "67f395dda480ad8eb45364a9"
     },
     "id": 17,
-    "image": "/images/lionCards/othawa.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/othawa.jpg",
     "title": "Othawa Pride",
     "lionsCount": "6 ",
     "yearsActive": "2000s - present.",
@@ -103,7 +103,7 @@
       "$oid": "67f395dda480ad8eb45364aa"
     },
     "id": 9,
-    "image": "/images/lionCards/nkuhumas.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/nkuhumas.jpg",
     "title": "Nkuhuma Pride",
     "lionsCount": "9 ",
     "yearsActive": "2000s - present.",
@@ -115,7 +115,7 @@
       "$oid": "67f395dda480ad8eb45364ab"
     },
     "id": 10,
-    "image": "/images/lionCards/talamati.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/talamati.jpg",
     "title": "Talamati Pride",
     "lionsCount": "5 ",
     "yearsActive": "2010s - present.",
@@ -127,7 +127,7 @@
       "$oid": "67f395dda480ad8eb45364ac"
     },
     "id": 11,
-    "image": "/images/lionCards/styx.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/styx.jpg",
     "title": "Styx Pride",
     "lionsCount": "4 ",
     "yearsActive": "1990s - present.",
@@ -139,7 +139,7 @@
       "$oid": "67f395dda480ad8eb45364ad"
     },
     "id": 12,
-    "image": "/images/lionCards/mhangeni.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/mhangeni.jpg",
     "title": "Mhangeni Pride",
     "lionsCount": "10 ",
     "yearsActive": "2012 - present.",
@@ -151,7 +151,7 @@
       "$oid": "67f395dda480ad8eb45364ae"
     },
     "id": 13,
-    "image": "/images/lionCards/kambulasp.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/kambulasp.jpg",
     "title": "Kambula Pride",
     "lionsCount": "8 ",
     "yearsActive": "2017 - present.",
@@ -163,7 +163,7 @@
       "$oid": "67f395dda480ad8eb45364af"
     },
     "id": 14,
-    "image": "/images/lionCards/selati.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/selati.jpg",
     "title": "Southern Pride",
     "lionsCount": "7 ",
     "yearsActive": "1990s - present.",
@@ -175,7 +175,7 @@
       "$oid": "67f395dda480ad8eb45364b0"
     },
     "id": 15,
-    "image": "/images/lionCards/ximunghwe.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/ximunghwe.jpg",
     "title": "Ximunghwe Pride",
     "lionsCount": "5 ",
     "yearsActive": "2010s - present.",
@@ -187,7 +187,7 @@
       "$oid": "67f395dda480ad8eb45364b1"
     },
     "id": 16,
-    "image": "/images/lionCards/torchwood.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/torchwood.jpg",
     "title": "Torchwood Pride",
     "lionsCount": "6 ",
     "yearsActive": "2010s - present.",
@@ -196,7 +196,7 @@
   },
   {
     "id": 20,
-    "image": "/images/lionCards/mapogo.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/mapogo.jpg",
     "title": "Mapogo Coalition",
     "lionsCount": "6 ",
     "yearsActive": "1998 - 2013.",
@@ -205,7 +205,7 @@
   },
   {
     "id": 18,
-    "image": "/images/lionCards/majingilane.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/majingilane.jpg",
     "title": "Majingilane Coalition",
     "lionsCount": "5 ",
     "yearsActive": "2005 - 2018.",
@@ -214,7 +214,7 @@
   },
   {
     "id": 35,
-    "image": "/images/lionCards/mbiris.jpg",
+    "image": "https://www.thewildlion.org/images/lionCards/mbiris.jpg",
     "title": "Mbiri Coalition",
     "lionsCount": "3 ",
     "yearsActive": "2013 - 2025.",

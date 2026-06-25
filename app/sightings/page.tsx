@@ -43,15 +43,14 @@ export const metadata = {
 };
 
 export default async function Sightings() {
-  const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || "https://thewildlion.org/";
-  const sightingData = await fetch(`${baseUrl}/Data/liondb.sightings.json`, {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000/";
+  const sightingData = await fetch(`${baseUrl}/api/sightings`, {
     next: { revalidate: 60 },
   });
   const sighting = await sightingData.json();
 
   const sortedSightings = [...sighting].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
   );
 
   const updatedSightings = sortedSightings.map((s, index) => ({
