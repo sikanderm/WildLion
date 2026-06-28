@@ -31,10 +31,7 @@ export default async function DisplayProfile({
 
   const profileData = getProfiles();
 
-  const profile = profileData.find(
-    (item: Profile) => item.title.trim().toLowerCase() === spacedTitle,
-  );
-
+  const profile = profileData.find((item) => item.title.trim() === spacedTitle);
   if (!profile) {
     notFound();
   }
