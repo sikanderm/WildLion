@@ -96,7 +96,7 @@ export default async function Home() {
         <h1>Featured Lion Profiles</h1>
       </div>
       <div className="liongrid-container">
-        <LionGrid initialData={lions} filter="recent"></LionGrid>
+        <LionGrid initialData={lionData} filter="recent"></LionGrid>
       </div>
       <div className="sighting-title">
         <h2>Recent Sightings</h2>
