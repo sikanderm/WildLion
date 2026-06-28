@@ -5,7 +5,6 @@ import { getLionMetadata } from "@/libs/lions";
 import { getProfiles } from "@/libs/profile";
 import { getSightings } from "@/libs/sightings";
 import { getLions } from "@/libs/lionData";
-import type { Profile } from "@/types/Profile";
 
 type Params = {
   title: string;

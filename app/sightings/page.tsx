@@ -1,5 +1,6 @@
 export const dynamic = "force-dynamic";
 
+import { getSightings } from "@/libs/sightings";
 import SightingsMap from "@/components/SightingsMap";
 import Head from "next/head";
 export const metadata = {
@@ -43,39 +44,14 @@ export const metadata = {
 };
 
 export default async function Sightings() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000/";
-  const tokenRes = await fetch(`${baseUrl}/api/token`, {
-    headers: {
-      "x-api-key": process.env.API_KEY!,
-    },
-  });
+  const sightingData = getSightings();
 
-  if (!tokenRes.ok) {
-    throw new Error("Failed to get token");
-  }
-
-  const { token } = await tokenRes.json();
-
-  // Call protected API with Bearer token
-  const sightingData = await fetch(`${baseUrl}/api/sightings`, {
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-    next: {
-      revalidate: 60,
-    },
-  });
-  const sighting = await sightingData.json();
-
-  const sortedSightings = [...sighting].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
-  );
-
-  const updatedSightings = sortedSightings.map((s, index) => ({
-    ...s,
-    id: sortedSightings.length - index, // 1 = most recent
-  }));
-
+  const sightings = sightingData
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .map((s, i, arr) => ({
+      ...s,
+      id: arr.length - i,
+    }));
   return (
     <div>
       <Head>
@@ -91,7 +67,7 @@ export default async function Sightings() {
           }}
         />
       </Head>
-      <SightingsMap sightings={updatedSightings} />
+      <SightingsMap sightings={sightings} />
     </div>
   );
 }
