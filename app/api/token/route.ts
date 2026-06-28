@@ -1,8 +1,10 @@
 import jwt from "jsonwebtoken";
 
 export async function GET(req: Request) {
-  console.log("Header:", req.headers.get("x-api-key"));
-  console.log("Env:", process.env.API_KEY);
+  console.log("HEADERS ALL:", Object.fromEntries(req.headers.entries()));
+
+  console.log("x-api-key only:", req.headers.get("x-api-key"));
+  console.log("ENV API_KEY:", process.env.API_KEY);
 
   const apiKey = req.headers.get("x-api-key");
 
