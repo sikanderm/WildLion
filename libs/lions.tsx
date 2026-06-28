@@ -7,11 +7,26 @@ export async function getLionMetadata(params: { title: string }) {
 
   const spacedTitle = title.replace(/-/g, " ");
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000/";
-  const res = await fetch(`${baseUrl}/api/profile`, {
+  const tokenRes = await fetch(`${baseUrl}/api/token`, {
+    headers: {
+      "x-api-key": process.env.API_KEY!,
+    },
+  });
+
+  if (!tokenRes.ok) {
+    throw new Error("Failed to get token");
+  }
+
+  const { token } = await tokenRes.json();
+
+  const profileData = await fetch(`${baseUrl}/api/profile`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
     next: { revalidate: 60 },
   });
 
-  const data = await res.json();
+  const data = await profileData.json();
 
   const profile = data.find(
     (item: { title: string }) => item.title.trim() === spacedTitle.trim(),

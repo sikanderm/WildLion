@@ -44,8 +44,26 @@ export const metadata = {
 
 export default async function Sightings() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000/";
+  const tokenRes = await fetch(`${baseUrl}/api/token`, {
+    headers: {
+      "x-api-key": process.env.API_KEY!,
+    },
+  });
+
+  if (!tokenRes.ok) {
+    throw new Error("Failed to get token");
+  }
+
+  const { token } = await tokenRes.json();
+
+  // Call protected API with Bearer token
   const sightingData = await fetch(`${baseUrl}/api/sightings`, {
-    next: { revalidate: 60 },
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+    next: {
+      revalidate: 60,
+    },
   });
   const sighting = await sightingData.json();
 

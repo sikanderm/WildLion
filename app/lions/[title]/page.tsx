@@ -1,6 +1,5 @@
 import Head from "next/head";
 import ProfileDisplay from "@/components/Profile";
-import { Metadata } from "next";
 import { getLionMetadata } from "../../../libs/lions";
 type Params = { title: string };
 
@@ -24,7 +23,24 @@ export default async function DisplayProfile({
 
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000/";
 
+  //Generate Token
+  const tokenRes = await fetch(`${baseUrl}/api/token`, {
+    headers: {
+      "x-api-key": process.env.API_KEY!,
+    },
+  });
+
+  if (!tokenRes.ok) {
+    throw new Error("Failed to get token");
+  }
+
+  const { token } = await tokenRes.json();
+
+  // Call protected API with Bearer token
   const profileData = await fetch(`${baseUrl}/api/profile`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
     next: { revalidate: 60 },
   });
   const data = await profileData.json();
@@ -33,7 +49,11 @@ export default async function DisplayProfile({
     (item: { title: string }) => item.title.trim() === spacedTitle.trim(),
   );
 
+  // Call protected API with Bearer token
   const sightingData = await fetch(`${baseUrl}/api/sightings`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
     next: { revalidate: 60 },
   });
   const sighting = await sightingData.json();
@@ -49,9 +69,16 @@ export default async function DisplayProfile({
     id: sortedSightings.length - i,
   }));
 
+  // Call protected API with Bearer token
   const lionData = await fetch(`${baseUrl}/api/lions`, {
-    next: { revalidate: 60 },
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+    next: {
+      revalidate: 60,
+    },
   });
+
   const lion = await lionData.json();
   const lions = profile?.mentioned
     ? lion.filter(

@@ -35,11 +35,30 @@ export const metadata = {
 
 export default async function Home() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
-  const lionData = await fetch(`${baseUrl}/api/lions`, {
-    next: { revalidate: 60 },
+  // Get JWT token
+  const tokenRes = await fetch(`${baseUrl}/api/token`, {
+    headers: {
+      "x-api-key": process.env.API_KEY!,
+    },
   });
-  const lions = await lionData.json();
 
+  if (!tokenRes.ok) {
+    throw new Error("Failed to get token");
+  }
+
+  const { token } = await tokenRes.json();
+
+  // Call protected API with Bearer token
+  const lionData = await fetch(`${baseUrl}/api/lions`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+    next: {
+      revalidate: 60,
+    },
+  });
+
+  const lions = await lionData.json();
   return (
     <>
       <div className="home-title">

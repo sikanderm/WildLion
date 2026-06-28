@@ -19,10 +19,22 @@ export default function Search() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/api/lions");
-        if (!response.ok) throw new Error("Network response was not ok");
-        const lionsData: Lion[] = await response.json();
-        setData(lionsData);
+        /* const tokenResponse = await fetch("/api/token", {
+          headers: {
+            "x-api-key": "your-api-key",
+          },
+        });
+
+        const { token } = await tokenResponse.json();
+
+        const response = await fetch("/api/lions", {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+
+        const lionsData: Lion[] = await response.json(); */
+        setData([]);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
