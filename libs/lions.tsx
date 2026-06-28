@@ -1,5 +1,7 @@
 import { Metadata } from "next";
+import { notFound } from "next/navigation";
 
+import { getProfiles } from "@/libs/profile";
 export type Params = { params: { title: string } };
 
 export async function getLionMetadata(params: { title: string }) {
@@ -7,30 +9,16 @@ export async function getLionMetadata(params: { title: string }) {
 
   const spacedTitle = title.replace(/-/g, " ");
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000/";
-  const tokenRes = await fetch(`${baseUrl}/api/token`, {
-    headers: {
-      "x-api-key": process.env.API_KEY!,
-    },
-  });
 
-  if (!tokenRes.ok) {
-    throw new Error("Failed to get token");
-  }
+  const profileData = getProfiles();
 
-  const { token } = await tokenRes.json();
-
-  const profileData = await fetch(`${baseUrl}/api/profile`, {
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-    next: { revalidate: 60 },
-  });
-
-  const data = await profileData.json();
-
-  const profile = data.find(
-    (item: { title: string }) => item.title.trim() === spacedTitle.trim(),
+  const profile = profileData.find(
+    (item) => item.title.trim() === spacedTitle.trim(),
   );
+
+  if (!profile) {
+    notFound();
+  }
 
   if (!profile) {
     return {

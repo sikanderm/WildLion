@@ -7,16 +7,16 @@ export interface Profile {
   reserve: string;
   mentioned: string[];
   content: {
-    type: "text";
-    heading: string;
-    paragraph: string;
-    imageSrc: string;
-    caption: string;
+    type: string;
+    heading?: string;
+    paragraph?: string;
+    imageSrc?: string;
+    caption?: string;
   }[];
 }
 
 export interface Lion {
-  id: string;
+  id: number;
   title: string;
   image: string;
   location: string;

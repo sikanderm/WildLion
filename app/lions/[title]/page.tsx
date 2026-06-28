@@ -1,18 +1,23 @@
 import Head from "next/head";
+import { notFound } from "next/navigation";
 import ProfileDisplay from "@/components/Profile";
-import { getLionMetadata } from "../../../libs/lions";
+import { getLionMetadata } from "@/libs/lions";
 import { getProfiles } from "@/libs/profile";
-import { getToken } from "@/libs/auth";
-type Params = { title: string };
+import { getSightings } from "@/libs/sightings";
+import { getLions } from "@/libs/lionData";
+import type { Profile } from "@/types/Profile";
 
-// This function expects a params object wrapped in a promise
+type Params = {
+  title: string;
+};
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<Params>;
 }) {
-  const resolvedParams = await params;
-  return getLionMetadata(resolvedParams); // Assuming this handles the shape correctly
+  const { title } = await params;
+  return getLionMetadata({ title });
 }
 
 export default async function DisplayProfile({
@@ -20,58 +25,36 @@ export default async function DisplayProfile({
 }: {
   params: Promise<Params>;
 }) {
-  const { title: profileTitle } = await params;
-  const spacedTitle = profileTitle.replace(/-/g, " ");
+  const { title } = await params;
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000/";
-
-  //Generate Token
-  const token = getToken();
+  const spacedTitle = title.replace(/-/g, " ").toLowerCase();
 
   const profileData = getProfiles();
 
   const profile = profileData.find(
-    (item: { title: string }) => item.title.trim() === spacedTitle.trim(),
+    (item: Profile) => item.title.trim().toLowerCase() === spacedTitle,
   );
 
-  // Call protected API with Bearer token
-  const sightingData = await fetch(`${baseUrl}/api/sightings`, {
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-    next: { revalidate: 60 },
-  });
-  const sighting = await sightingData.json();
+  if (!profile) {
+    notFound();
+  }
 
-  const filterTitle = sighting.filter((s: any) => s.name === profile?.title);
+  const sightingData = getSightings();
 
-  const sortedSightings = [...filterTitle].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+  const sightings = sightingData
+    .filter((s) => s.name === profile.title)
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .map((s, i, arr) => ({
+      ...s,
+      id: arr.length - i,
+    }));
+
+  const lionData = getLions();
+
+  const lions = lionData.filter(
+    (lion) => lion.title && profile.mentioned.includes(lion.title),
   );
 
-  const sightings = sortedSightings.map((s: any, i: number) => ({
-    ...s,
-    id: sortedSightings.length - i,
-  }));
-
-  // Call protected API with Bearer token
-  const lionData = await fetch(`${baseUrl}/api/lions`, {
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-    next: {
-      revalidate: 60,
-    },
-  });
-
-  const lion = await lionData.json();
-  const lions = profile?.mentioned
-    ? lion.filter(
-        (s: { title?: string }) =>
-          s.title && profile.mentioned.includes(s.title),
-      )
-    : [];
-  console.log(lions);
   return (
     <>
       <Head>

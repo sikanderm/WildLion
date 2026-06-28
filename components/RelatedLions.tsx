@@ -5,7 +5,7 @@ import "../styles/relatedLions.css";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 export interface Lion {
-  id: string;
+  id: number;
   title: string;
   image: string;
   location: string;

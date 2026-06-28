@@ -73,7 +73,6 @@ export default async function Home() {
   // Call protected API with Bearer token
   const lionData = getLions();
 
-  const lions = lionData.slice(0, 10);
   return (
     <div>
       <Head>
