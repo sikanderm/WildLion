@@ -4,6 +4,7 @@ import LionGrid from "@/components/LionGrid";
 import LionMap from "@/components/LionMap";
 import Head from "next/head";
 import "../styles/Home.css";
+import { getToken } from "@/libs/auth";
 
 export const metadata = {
   title: "Featured Lions and Sightings | Kruger & Sabi Sands",
@@ -59,17 +60,7 @@ export default async function Home() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000/";
 
   //Generate Token
-  const tokenRes = await fetch(`${baseUrl}/api/token`, {
-    headers: {
-      "x-api-key": process.env.API_KEY!,
-    },
-  });
-
-  if (!tokenRes.ok) {
-    throw new Error("Failed to get token");
-  }
-
-  const { token } = await tokenRes.json();
+  const token = getToken();
 
   const sightingData = await fetch(`${baseUrl}/api/sightings`, {
     headers: {
