@@ -19,7 +19,7 @@ export default function Search() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        /* const tokenResponse = await fetch("/api/token", {
+        const tokenResponse = await fetch("/api/token", {
           headers: {
             "x-api-key": "your-api-key",
           },
@@ -33,7 +33,7 @@ export default function Search() {
           },
         });
 
-        const lionsData: Lion[] = await response.json(); */
+        const lionsData: Lion[] = await response.json();
         setData([]);
       } catch (error) {
         console.error("Error fetching data:", error);

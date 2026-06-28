@@ -26,9 +26,7 @@ const Navbar: React.FC = () => {
         </div>
       </Link>
 
-      <div className="search-box">
-        <Search />
-      </div>
+      <div className="search-box">{/* <Search /> */}</div>
 
       <button
         style={{ fontSize: "40px" }}
