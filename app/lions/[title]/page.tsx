@@ -27,7 +27,7 @@ export default async function DisplayProfile({
 }) {
   const { title } = await params;
 
-  const spacedTitle = title.replace(/-/g, " ").toLowerCase();
+  const spacedTitle = title.replace(/-/g, " ");
 
   const profileData = getProfiles();
 
