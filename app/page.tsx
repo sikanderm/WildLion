@@ -5,6 +5,7 @@ import LionMap from "@/components/LionMap";
 import Head from "next/head";
 import "../styles/Home.css";
 import { getToken } from "@/libs/auth";
+import { getSightings } from "@/libs/sightings";
 
 export const metadata = {
   title: "Featured Lions and Sightings | Kruger & Sabi Sands",
@@ -62,14 +63,7 @@ export default async function Home() {
   //Generate Token
   const token = getToken();
 
-  const sightingData = await fetch(`${baseUrl}/api/sightings`, {
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-    next: { revalidate: 60 },
-  });
-
-  const sighting = await sightingData.json();
+  const sighting = getSightings();
 
   const sightings = sighting
     .slice(sighting.length - 10, sighting.length)
