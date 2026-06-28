@@ -9,7 +9,7 @@ export interface Lion {
   title: string;
   image: string;
   location: string;
-  lionsCount: number;
+  lionsCount: string;
   yearsActive: string;
 }
 

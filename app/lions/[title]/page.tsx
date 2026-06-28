@@ -1,6 +1,8 @@
 import Head from "next/head";
 import ProfileDisplay from "@/components/Profile";
 import { getLionMetadata } from "../../../libs/lions";
+import { getProfiles } from "@/libs/profile";
+import { getToken } from "@/libs/auth";
 type Params = { title: string };
 
 // This function expects a params object wrapped in a promise
@@ -24,28 +26,11 @@ export default async function DisplayProfile({
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000/";
 
   //Generate Token
-  const tokenRes = await fetch(`${baseUrl}/api/token`, {
-    headers: {
-      "x-api-key": process.env.API_KEY!,
-    },
-  });
+  const token = getToken();
 
-  if (!tokenRes.ok) {
-    throw new Error("Failed to get token");
-  }
+  const profileData = getProfiles();
 
-  const { token } = await tokenRes.json();
-
-  // Call protected API with Bearer token
-  const profileData = await fetch(`${baseUrl}/api/profile`, {
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-    next: { revalidate: 60 },
-  });
-  const data = await profileData.json();
-
-  const profile = data.find(
+  const profile = profileData.find(
     (item: { title: string }) => item.title.trim() === spacedTitle.trim(),
   );
 

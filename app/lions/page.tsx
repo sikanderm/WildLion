@@ -1,5 +1,8 @@
 export const dynamic = "force-dynamic";
 
+import { getToken } from "@/libs/auth";
+import { getSightings } from "@/libs/sightings";
+import { getLions } from "@/libs/lionData";
 import LionGrid from "@/components/LionGrid";
 import Head from "next/head";
 export const metadata = {
@@ -36,29 +39,10 @@ export const metadata = {
 export default async function Home() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
   // Get JWT token
-  const tokenRes = await fetch(`${baseUrl}/api/token`, {
-    headers: {
-      "x-api-key": process.env.API_KEY!,
-    },
-  });
+  const token = getToken();
 
-  if (!tokenRes.ok) {
-    throw new Error("Failed to get token");
-  }
+  const lionData = getLions();
 
-  const { token } = await tokenRes.json();
-
-  // Call protected API with Bearer token
-  const lionData = await fetch(`${baseUrl}/api/lions`, {
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-    next: {
-      revalidate: 60,
-    },
-  });
-
-  const lions = await lionData.json();
   return (
     <>
       <div className="home-title">
@@ -77,7 +61,7 @@ export default async function Home() {
         </Head>
         <h1>Wild Lion Profiles</h1>
       </div>
-      <LionGrid initialData={lions} filter="all"></LionGrid>
+      <LionGrid initialData={lionData} filter="all"></LionGrid>
     </>
   );
 }

@@ -10,6 +10,8 @@ export interface Profile {
     type: "text";
     heading: string;
     paragraph: string;
+    imageSrc: string;
+    caption: string;
   }[];
 }
 
@@ -18,7 +20,7 @@ export interface Lion {
   title: string;
   image: string;
   location: string;
-  lionsCount: number;
+  lionsCount: string;
   yearsActive: string;
 }
 interface Sighting {
