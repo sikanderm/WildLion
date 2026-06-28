@@ -1,14 +1,15 @@
 "use client";
 import React, { useState, useEffect, ChangeEvent } from "react";
 import Link from "next/link";
+import { getLions } from "@/libs/lionData";
 import "../styles/search.css";
 
 export interface Lion {
-  id: string;
+  id: number;
   title: string;
   image: string;
   location: string;
-  lionsCount: number;
+  lionsCount: string;
   yearsActive: string;
 }
 
@@ -17,24 +18,10 @@ export default function Search() {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [isFocused, setIsFocused] = useState<boolean>(false);
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchData = () => {
       try {
-        const tokenResponse = await fetch("/api/token", {
-          headers: {
-            "x-api-key": "your-api-key",
-          },
-        });
-
-        const { token } = await tokenResponse.json();
-
-        const response = await fetch("/api/lions", {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
-
-        const lionsData: Lion[] = await response.json();
-        setData([]);
+        const response = getLions();
+        setData(response);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
