@@ -7,7 +7,7 @@ import Link from "next/link";
 
 // Define Lion type
 export interface Lion {
-  id: number;
+  id: string;
   title: string;
   image: string;
   location: string;
