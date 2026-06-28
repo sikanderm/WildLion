@@ -6,6 +6,7 @@ import Head from "next/head";
 import "../styles/Home.css";
 import { getToken } from "@/libs/auth";
 import { getSightings } from "@/libs/sightings";
+import { getLions } from "@/libs/lionData";
 
 export const metadata = {
   title: "Featured Lions and Sightings | Kruger & Sabi Sands",
@@ -70,18 +71,9 @@ export default async function Home() {
     .map((s: any, i: number) => ({ ...s, id: 10 - i }));
 
   // Call protected API with Bearer token
-  const lionData = await fetch(`${baseUrl}/api/lions`, {
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-    next: {
-      revalidate: 60,
-    },
-  });
+  const lionData = getLions();
 
-  const lion = await lionData.json();
-
-  const lions = lion.slice(0, 10);
+  const lions = lionData.slice(0, 10);
   return (
     <div>
       <Head>
