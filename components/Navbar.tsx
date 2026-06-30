@@ -44,6 +44,7 @@ const Navbar: React.FC = () => {
           { href: "/", label: "Home" },
           { href: "/lions", label: "Lions" },
           { href: "/sightings", label: "Sightings" },
+          { href: "/blog", label: "Blog" },
           { href: "/about", label: "About" },
         ].map(({ href, label }) => (
           <li key={href}>

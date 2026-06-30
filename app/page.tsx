@@ -4,7 +4,6 @@ import LionGrid from "@/components/LionGrid";
 import LionMap from "@/components/LionMap";
 import Head from "next/head";
 import "../styles/Home.css";
-import { getToken } from "@/libs/auth";
 import { getSightings } from "@/libs/sightings";
 import { getLions } from "@/libs/lionData";
 
@@ -87,7 +86,7 @@ export default async function Home() {
         <Carousel></Carousel>
       </div>
       <div className="home-title">
-        <h1>Featured Lion Profiles</h1>
+        <h1>Our Lions</h1>
       </div>
       <div className="liongrid-container">
         <LionGrid initialData={lionData} filter="recent"></LionGrid>

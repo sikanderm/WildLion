@@ -10,11 +10,11 @@ import type { Map } from "leaflet";
 
 const MapContainer = dynamic(
   () => import("react-leaflet").then((m) => m.MapContainer),
-  { ssr: false }
+  { ssr: false },
 );
 const TileLayer = dynamic(
   () => import("react-leaflet").then((m) => m.TileLayer),
-  { ssr: false }
+  { ssr: false },
 );
 const Marker = dynamic(() => import("react-leaflet").then((m) => m.Marker), {
   ssr: false,
@@ -85,7 +85,7 @@ export default function SightingsMap({ sightings }: { sightings: Sighting[] }) {
 
   useEffect(() => {
     const filtered = sightings.filter(
-      (sighting) => sighting.location === location[0]
+      (sighting) => sighting.location === location[0],
     );
     const filteredWithUpdatedId = filtered.map((sighting, index) => ({
       ...sighting,
