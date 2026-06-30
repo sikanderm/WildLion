@@ -79,7 +79,14 @@ const LionGrid: React.FC<LionGridProps> = ({
                 of {lion.lionsCount} lions from the {lion.location} active from{" "}
                 {lion.yearsActive}
               </p>
-              <div style={{ color: "teal", padding: "10px", fontSize: "34px" }}>
+              <div
+                style={{
+                  color: "teal",
+                  padding: "10px",
+                  fontSize: "34px",
+                  filter: "drop-shadow(0 2px 3px rgba(0, 0, 0, 0.18))",
+                }}
+              >
                 <FaArrowRight />
               </div>
             </div>

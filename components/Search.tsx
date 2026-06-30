@@ -42,40 +42,17 @@ export default function Search() {
     isFocused && searchTerm.length > 0 && filteredData.length > 0;
 
   return (
-    <div
-      className="search-div"
-      style={{
-        position: "relative",
-        width: "300px",
-        height: "70px",
-      }}
-    >
+    <div className="search-div">
       <input
         className="search-input"
         type="text"
-        placeholder=" Search for lions"
+        placeholder="Search for lions"
         value={searchTerm}
         onChange={handleInputChange}
         onFocus={() => setIsFocused(true)}
       />
       {showDropdown && (
-        <ul
-          style={{
-            position: "absolute",
-            top: "100%",
-            left: 0,
-            right: 0,
-            background: "white",
-            border: "1px solid #ccc",
-            borderTop: "none",
-            maxHeight: "200px",
-            overflowY: "auto",
-            zIndex: 10,
-            listStyle: "none",
-            padding: 0,
-            margin: 0,
-          }}
-        >
+        <ul className="search-dropdown">
           {filteredData.map((item, index) => (
             <li key={index} className="drop-li">
               <Link

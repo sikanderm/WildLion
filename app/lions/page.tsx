@@ -55,7 +55,7 @@ export default async function Home() {
             }}
           />
         </Head>
-        <h1>Wild Lions</h1>
+        <h1>Our Featured Lions</h1>
       </div>
       <LionGrid initialData={lionData} filter="all"></LionGrid>
     </>

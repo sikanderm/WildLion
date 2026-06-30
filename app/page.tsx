@@ -86,7 +86,7 @@ export default async function Home() {
         <Carousel></Carousel>
       </div>
       <div className="home-title">
-        <h1>Our Lions</h1>
+        <h1>Our Featured Lions</h1>
       </div>
       <div className="liongrid-container">
         <LionGrid initialData={lionData} filter="recent"></LionGrid>

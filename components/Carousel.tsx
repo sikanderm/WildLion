@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { FaArrowRight } from "react-icons/fa";
 import "../styles/carousel.css";
 
 const images = [
@@ -14,10 +15,18 @@ const images = [
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const goToSlide = (direction: "next" | "prev") => {
+    setCurrentIndex((prev) =>
+      direction === "next"
+        ? (prev + 1) % images.length
+        : (prev - 1 + images.length) % images.length,
+    );
+  };
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 3000);
+    }, 15000);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -28,6 +37,36 @@ const Carousel = () => {
       role="region"
       aria-label="Wild lion image carousel"
     >
+      <button
+        type="button"
+        className="carousel-arrow carousel-arrow-left"
+        onClick={() => goToSlide("prev")}
+        aria-label="Previous slide"
+      >
+        <FaArrowRight style={{ transform: "rotate(180deg)" }} />
+      </button>
+      <button
+        type="button"
+        className="carousel-arrow carousel-arrow-right"
+        onClick={() => goToSlide("next")}
+        aria-label="Next slide"
+      >
+        <FaArrowRight />
+      </button>
+      <div className="carousel-indicators" aria-label="Carousel indicators">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            type="button"
+            className={`carousel-indicator ${
+              index === currentIndex ? "active" : ""
+            }`}
+            onClick={() => setCurrentIndex(index)}
+            aria-label={`Go to slide ${index + 1}`}
+            aria-current={index === currentIndex}
+          />
+        ))}
+      </div>
       {images.map(({ src, alt }, index) => (
         <div
           key={src}
@@ -45,9 +84,9 @@ const Carousel = () => {
             unoptimized
           />
           <div className="overlay-text">
-            <p>Hear the Wild Speak</p>
+            <p>Discover the lives behind the roar</p>
             <div className="lin">
-              <Link href="/lions">Read More</Link>
+              <Link href="/lions">Explore the lions</Link>
             </div>
           </div>
         </div>

@@ -183,21 +183,53 @@ export default function SightingsMap({ sightings }: { sightings: Sighting[] }) {
                   icon={
                     new leaflet.DivIcon({
                       className: "marker-icon",
-                      html: `<div style="background-color: teal; color: white; text-align: center; border-radius: 50%; width: 20px; height: 20px; line-height: 20px; font-size: 10px;">${sighting.id}</div>`,
+                      html: `<div style="background-color: teal; color: white; text-align: center; border-radius: 50%; width: 22px; height: 22px; line-height: 22px; font-size: 11px;">${sighting.id}</div>`,
                       iconSize: [20, 20],
                       iconAnchor: [10, 10],
                     })
                   }
                 >
                   <Popup>
-                    <h3>{sighting.name}</h3>
-                    <p>
-                      {sighting.description} near {sighting.reserve},{" "}
-                      {sighting.location}.
-                    </p>
-                    <p>
-                      <strong>Date:</strong> {sighting.date}
-                    </p>
+                    <div
+                      style={{
+                        minWidth: "180px",
+                        fontFamily: "Arial, sans-serif",
+                      }}
+                    >
+                      <h3
+                        style={{
+                          margin: "0 0 6px",
+                          color: "#0f766e",
+                          fontSize: "15px",
+                        }}
+                      >
+                        {sighting.name}
+                      </h3>
+                      <p
+                        style={{
+                          margin: "0 0 6px",
+                          color: "#374151",
+                          lineHeight: 1.4,
+                        }}
+                      >
+                        {sighting.description} near {sighting.reserve},{" "}
+                        {sighting.location}.
+                      </p>
+                      <p
+                        style={{
+                          margin: 0,
+                          color: "#4b5563",
+                          fontSize: "13px",
+                        }}
+                      >
+                        <strong>Date:</strong>{" "}
+                        {new Date(sighting.date).toLocaleDateString("en-US", {
+                          year: "numeric",
+                          month: "short",
+                          day: "numeric",
+                        })}
+                      </p>
+                    </div>
                   </Popup>
                 </Marker>
               );

@@ -1,20 +1,20 @@
 import Blog from "@/components/blog";
 
 export const metadata = {
-  title: "About WildLion",
+  title: "WildLion Blog",
   description:
-    "Learn about WildLion’s mission to document lion lives, promote conservation, and build a passionate community around wildlife storytelling.",
+    "Explore starter stories from WildLion about lion conservation, field notes, and the lives behind the pride.",
   keywords:
-    "WildLion, lion conservation, lion prides, lion coalitions, wildlife community, big cats, Kruger lions, Sabi Sands, lion research",
+    "WildLion blog, lion conservation, lion stories, wildlife blogging, big cats, lion research",
   authors: [{ name: "WildLion Team" }],
   alternates: {
-    canonical: "https://thewildlion.org/about",
+    canonical: "https://thewildlion.org/blog",
   },
   openGraph: {
-    title: "About WildLion",
+    title: "WildLion Blog",
     description:
-      "Discover the vision behind WildLion — documenting lion prides and coalitions while connecting a global community of wildlife enthusiasts.",
-    url: "https://thewildlion.org/about",
+      "Read new stories from WildLion about lion conservation, field observations, and the people protecting these majestic animals.",
+    url: "https://thewildlion.org/blog",
     type: "website",
     images: [
       {
@@ -29,7 +29,7 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  metadataBase: new URL("https://thewildlion.org/about"),
+  metadataBase: new URL("https://thewildlion.org/blog"),
 };
 
 export default function BlogPage() {

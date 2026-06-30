@@ -6,11 +6,11 @@ import "leaflet/dist/leaflet.css";
 
 const MapContainer = dynamic(
   () => import("react-leaflet").then((m) => m.MapContainer),
-  { ssr: false }
+  { ssr: false },
 );
 const TileLayer = dynamic(
   () => import("react-leaflet").then((m) => m.TileLayer),
-  { ssr: false }
+  { ssr: false },
 );
 const Marker = dynamic(() => import("react-leaflet").then((m) => m.Marker), {
   ssr: false,
@@ -66,20 +66,37 @@ export default function LionMap({ sightings }: { sightings: Sighting[] }) {
           icon={
             new leaflet.DivIcon({
               className: "custom-icon",
-              html: `<div style="background-color: teal; color: white; border-radius: 50%; width: 20px; height: 20px; line-height: 20px; font-size: 10px; text-align: center;">${s.id}</div>`,
+              html: `<div style="background-color: teal; color: white; border-radius: 50%; width: 22px; height: 22px; line-height: 22px; font-size: 11px; text-align: center;">${s.id}</div>`,
               iconSize: [20, 20],
               iconAnchor: [10, 10],
             })
           }
         >
           <Popup>
-            <h3>{s.name}</h3>
-            <p>
-              {s.description} near {s.reserve}, {s.location}.
-            </p>
-            <p>
-              <strong>Date:</strong> {s.date}
-            </p>
+            <div style={{ minWidth: "180px", fontFamily: "Arial, sans-serif" }}>
+              <h3
+                style={{
+                  margin: "0 0 6px",
+                  color: "#0f766e",
+                  fontSize: "15px",
+                }}
+              >
+                {s.name}
+              </h3>
+              <p
+                style={{ margin: "0 0 6px", color: "#374151", lineHeight: 1.4 }}
+              >
+                {s.description} near {s.reserve}, {s.location}.
+              </p>
+              <p style={{ margin: 0, color: "#4b5563", fontSize: "13px" }}>
+                <strong>Date:</strong>{" "}
+                {new Date(s.date).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "short",
+                  day: "numeric",
+                })}
+              </p>
+            </div>
           </Popup>
         </Marker>
       ))}
