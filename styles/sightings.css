@@ -2,9 +2,19 @@
   margin: 0 auto;
   font-size: 25px;
   color: black;
-  padding-top: 20px;
+  padding: 20px 10px 0;
   text-align: center;
   font-family: sans-serif;
+}
+
+.home-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-title h1 {
+  margin: 0;
 }
 
 .sightings-header h2 {

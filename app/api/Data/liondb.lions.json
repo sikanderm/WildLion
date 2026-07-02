@@ -27,9 +27,6 @@
     "reserve": "SabiSands"
   },
   {
-    "_id": {
-      "$oid": "67f395dda480ad8eb45364a3"
-    },
     "id": 3,
     "image": "https://www.thewildlion.org/images/lionCards/ndhzengas.jpg",
     "title": "Ndhzenga Coalition",
@@ -39,9 +36,6 @@
     "reserve": "SabiSands"
   },
   {
-    "_id": {
-      "$oid": "67f395dda480ad8eb45364a4"
-    },
     "id": 4,
     "image": "https://www.thewildlion.org/images/lionCards/plaincamps.jpeg",
     "title": "Plains Camp Coalition",
@@ -51,9 +45,6 @@
     "reserve": "SabiSands"
   },
   {
-    "_id": {
-      "$oid": "67f395dda480ad8eb45364a5"
-    },
     "id": 5,
     "image": "https://www.thewildlion.org/images/lionCards/kambulas.jpg",
     "title": "Kambula Coalition",
@@ -63,9 +54,6 @@
     "reserve": "SabiSands"
   },
   {
-    "_id": {
-      "$oid": "67f395dda480ad8eb45364a6"
-    },
     "id": 6,
     "image": "https://www.thewildlion.org/images/lionCards/Nk+Kh.jpg",
     "title": "Nkuhuma and Talamati Coalition",
@@ -75,9 +63,6 @@
     "reserve": "SabiSands"
   },
   {
-    "_id": {
-      "$oid": "67f395dda480ad8eb45364a7"
-    },
     "id": 7,
     "image": "https://www.thewildlion.org/images/lionCards/tumbelas.jpg",
     "title": "Tumbela Coalition",
@@ -87,9 +72,6 @@
     "reserve": "SabiSands"
   },
   {
-    "_id": {
-      "$oid": "67f395dda480ad8eb45364a9"
-    },
     "id": 17,
     "image": "https://www.thewildlion.org/images/lionCards/othawa.jpg",
     "title": "Othawa Pride",
@@ -99,9 +81,6 @@
     "reserve": "SabiSands"
   },
   {
-    "_id": {
-      "$oid": "67f395dda480ad8eb45364aa"
-    },
     "id": 9,
     "image": "https://www.thewildlion.org/images/lionCards/nkuhumas.jpg",
     "title": "Nkuhuma Pride",
@@ -111,9 +90,6 @@
     "reserve": "SabiSands"
   },
   {
-    "_id": {
-      "$oid": "67f395dda480ad8eb45364ab"
-    },
     "id": 10,
     "image": "https://www.thewildlion.org/images/lionCards/talamati.jpg",
     "title": "Talamati Pride",
@@ -123,9 +99,6 @@
     "reserve": "SabiSands"
   },
   {
-    "_id": {
-      "$oid": "67f395dda480ad8eb45364ac"
-    },
     "id": 11,
     "image": "https://www.thewildlion.org/images/lionCards/styx.jpg",
     "title": "Styx Pride",
@@ -135,9 +108,6 @@
     "reserve": "SabiSands"
   },
   {
-    "_id": {
-      "$oid": "67f395dda480ad8eb45364ad"
-    },
     "id": 12,
     "image": "https://www.thewildlion.org/images/lionCards/mhangeni.jpg",
     "title": "Mhangeni Pride",
@@ -147,9 +117,6 @@
     "reserve": "SabiSands"
   },
   {
-    "_id": {
-      "$oid": "67f395dda480ad8eb45364ae"
-    },
     "id": 13,
     "image": "https://www.thewildlion.org/images/lionCards/kambulasp.jpg",
     "title": "Kambula Pride",
@@ -159,9 +126,6 @@
     "reserve": "SabiSands"
   },
   {
-    "_id": {
-      "$oid": "67f395dda480ad8eb45364af"
-    },
     "id": 14,
     "image": "https://www.thewildlion.org/images/lionCards/selati.jpg",
     "title": "Southern Pride",
@@ -171,9 +135,6 @@
     "reserve": "SabiSands"
   },
   {
-    "_id": {
-      "$oid": "67f395dda480ad8eb45364b0"
-    },
     "id": 15,
     "image": "https://www.thewildlion.org/images/lionCards/ximunghwe.jpg",
     "title": "Ximunghwe Pride",
@@ -183,9 +144,6 @@
     "reserve": "SabiSands"
   },
   {
-    "_id": {
-      "$oid": "67f395dda480ad8eb45364b1"
-    },
     "id": 16,
     "image": "https://www.thewildlion.org/images/lionCards/torchwood.jpg",
     "title": "Torchwood Pride",
@@ -220,5 +178,14 @@
     "yearsActive": "2013 - 2025.",
     "location": "Timbavati",
     "reserve": "Timbavati"
+  },
+  {
+    "id": 36,
+    "image": "https://www.thewildlion.org/images/lionCards/nwaswitshaka.jpeg",
+    "title": "N'waswitshaka Coalition",
+    "lionsCount": "4 ",
+    "yearsActive": "2021 - present.",
+    "location": "Southern Sabi Sands",
+    "reserve": "SabiSands"
   }
 ]

@@ -15,11 +15,15 @@
   background-color: white;
   margin: 0 auto;
   width: 80%;
-  padding: 10px;
+  padding: 10px 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .home-title h1 {
   text-align: center;
-  padding: 20px 10px 10px 10px;
+  padding: 10px 10px 0;
+  margin: 0;
 }
 
 .lion-card {
@@ -30,7 +34,9 @@
   border-radius: 8px;
   overflow: hidden;
   padding: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   cursor: pointer;
   color: white;
 }
