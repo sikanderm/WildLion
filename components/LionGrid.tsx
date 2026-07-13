@@ -5,7 +5,6 @@ import "../styles/LionGrid.css";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 
-// Define Lion type
 export interface Lion {
   id: number;
   title: string;
@@ -36,21 +35,39 @@ const LionGrid: React.FC<LionGridProps> = ({
   filter = "all",
 }) => {
   const [lionData, setLionData] = useState<Lion[]>([]);
+  const [nextLionData, setNextLionData] = useState<Lion[]>([]);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
     if (!Array.isArray(initialData) || initialData.length === 0) return;
 
     let intervalId: NodeJS.Timeout | null = null;
+    let firstLoad = true;
+
+    const updateRandomProfiles = () => {
+      const newProfiles = getRandomItems(initialData, 6);
+
+      if (firstLoad) {
+        // Show immediately
+        setLionData(newProfiles);
+        firstLoad = false;
+        return;
+      }
+
+      // Animate only after first render
+      setIsTransitioning(true);
+
+      setTimeout(() => {
+        setLionData(newProfiles);
+        setIsTransitioning(false);
+      }, 1000);
+    };
 
     if (filter === "all") {
       setLionData(initialData);
     } else {
-      const updateRandomProfiles = () => {
-        const profiles = getRandomItems(initialData, 6);
-        setLionData(profiles);
-      };
-
       updateRandomProfiles();
+
       intervalId = setInterval(updateRandomProfiles, 10000);
     }
 
@@ -66,11 +83,15 @@ const LionGrid: React.FC<LionGridProps> = ({
           <Link
             href={`/lions/${lion.title.split(" ").join("-")}`}
             key={lion.id}
-            className="lion-link lion-card"
+            className={`lion-link lion-card ${
+              isTransitioning ? "card-fade-out" : "card-fade-in"
+            }`}
             onClick={() => window.scrollTo(0, 0)}
           >
             <img src={lion.image} alt={lion.title} className="lion-image" />
+
             <h3 className="lion-title">{lion.title}</h3>
+
             <div className="sub-card">
               <p className="lion-info">
                 {lion.title?.toLowerCase().includes("pride")
@@ -79,6 +100,7 @@ const LionGrid: React.FC<LionGridProps> = ({
                 of {lion.lionsCount} lions from the {lion.location} active from{" "}
                 {lion.yearsActive}
               </p>
+
               <div
                 style={{
                   color: "teal",
