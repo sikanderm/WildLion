@@ -8,6 +8,7 @@ export interface Profile {
   mentioned: string[];
   content: {
     type: string;
+    link?: string;
     heading?: string;
     paragraph?: string;
     imageSrc?: string;
@@ -88,18 +89,27 @@ export default function ProfileDisplay({
       {/* Display content (array with headings, paragraphs, images, and captions) */}
       <div className="content">
         {profileData.content?.map((item, index) => {
-          // Check if the item is an object containing heading and paragraph
           if (item.type === "text") {
             return (
               <div key={index} className="text-item">
                 {item.heading && <h3>{item.heading}</h3>}
-
                 <ReactMarkdown>{item.paragraph}</ReactMarkdown>
+              </div>
+            );
+          } else if (item.type === "vid") {
+            return (
+              <div key={index}>
+                <div className="link-ig">
+                  {item.link && <InstagramEmbed url={item.link} />}
+                </div>
+                <div>
+                  <p className="video-caption">{item.caption}</p>
+                </div>
               </div>
             );
           }
 
-          return null; // Default return for unknown types
+          return null;
         })}
         <p style={{ textAlign: "center", fontWeight: "bold" }}>
           The information was gathered through various public medias such as
